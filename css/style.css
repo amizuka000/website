@@ -63,7 +63,10 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin: 1em auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
 }
 
 button:hover{
@@ -106,14 +109,30 @@ button:hover{
 
 }
 
-.twocolumn
+.fiftycolumn
 {
   float: left;
   width: 50%;
   overflow-wrap: break-word;
 }
 
+.twentyfivecolumn img{
+  width: 15%;
+  margin: 1em;
+  float: left;
+}
 
+.seventyfivecolumn{
+  float: left;
+  width: 75%;
+  overflow-wrap: break-word;
+}
+
+
+.seventyfivecolumn p {
+  float: left;
+  padding-left: 2em;
+}
 
 
 
@@ -395,12 +414,26 @@ transition: all .4s ease;
   transition: max-height 0.2s ease-out;
   }
 
+/*
+  .accordionpanel.education img{
+    width: 15%;
+    margin: 1em;
+    float: left;
+  }
+
+  .accordionpanel.education p {
+    float: left;
+    padding-left: 2em;
+  }
+  */
+
   .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 0.8em;
   color: #44495D;
   float: right;
   margin-left: 0.4em;
+  overflow: visible;
 }
 
 .accordionactive:after {
@@ -581,6 +614,14 @@ transition: all .4s ease;
       color: #44495D;
       margin: 0;
       text-align: right;
+    }
+
+    .accordion {
+      padding: 1em 2em;
+    }
+
+    button {
+      padding: 1em 2em;
     }
 
   }
