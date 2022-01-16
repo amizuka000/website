@@ -4,6 +4,20 @@
     font-size: 0.75em;
   }
 
+  .twentyfivecolumn img{
+   display: none;
+  }
+
+.mobilecolumn{
+  width: 100%;
+}
+
+.mobilecolumn p{
+  padding-left:0;
+}
+
+
+
 
   /*.index
   {
