@@ -77,6 +77,12 @@ button:hover{
   -webkit-transition: all .4s ease; /*safari and chrome*/
 }
 
+hr {
+  height: 1px;
+  background-color: #44495D;
+  border: none;
+}
+
 .maintext
 {
   background-color: #fff;
@@ -109,6 +115,18 @@ button:hover{
 
 }
 
+.thirtythreecolumn{
+  float: left;
+  width: 33.33%;
+  overflow-wrap: break-word;
+}
+
+.thirtythreecolumn img{
+  width: 100%;
+}
+
+
+
 .fiftycolumn
 {
   float: left;
@@ -116,8 +134,20 @@ button:hover{
   overflow-wrap: break-word;
 }
 
+.fiftycolumn img{
+  width: 100%;
+  float: left;
+}
+
+.twentyfivecolumn
+{
+  float: left;
+  width: 25%;
+  overflow-wrap: break-word;
+}
+
 .twentyfivecolumn img{
-  width: 15%;
+  width: 60%;
   margin: 1em;
   float: left;
 }
@@ -306,6 +336,8 @@ transition: all .4s ease;
 
   }
 
+
+/*
   .hoverrotate img
   {
     z-index: 3;
@@ -318,12 +350,25 @@ transition: all .4s ease;
     width: 25%;
     filter: invert(27%) sepia(24%) saturate(445%) hue-rotate(190deg) brightness(95%) contrast(92%);
   }
+  */
+
+  .hoverrotate img
+  {
+    margin-left:auto;
+    margin-right:auto;
+    width: 75%;
+    filter: invert(27%) sepia(24%) saturate(445%) hue-rotate(190deg) brightness(95%) contrast(92%);
+  }
 
 
   .index h1
   {
   font-size: 1.5rem;
   font-weight: normal;
+  }
+
+  .index p{
+    text-align: left;
   }
 
 
@@ -349,6 +394,8 @@ transition: all .4s ease;
     padding-top: 30%;
     margin: 0;
   }
+
+
 
   .hoverrotate img:hover + .hide
   {
