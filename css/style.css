@@ -1,0 +1,591 @@
+/*
+1. General
+2. Layout
+3. Responsive Media
+4. Header
+5. Footer
+6. Navigation
+LAST. Media Queries
+8. Index
+9. Resume
+10. Projects
+11. Art
+
+*/
+
+
+/*=========================== 1. GENERAL ============================*/
+
+body
+{
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.6em;
+  color: #44495D;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+
+a
+{
+  font-size: 1em;
+  color: #44495D;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  padding: 2em;
+}
+
+
+a:hover
+{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease; /*safari and chrome*/
+}
+
+button {
+  display: inline-block;
+  background-color: #B5DFD4;
+  cursor: pointer;
+  padding: 1.5em 2em;
+  text-align: center;
+  border: none;
+  border-radius: 2em;
+  outline: none;
+  transition: 0.4s;
+  font-size: 1em;
+  font-weight: normal;
+  color: #44495D;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 1em auto;
+}
+
+button:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease; /*safari and chrome*/
+}
+
+.maintext
+{
+  background-color: #fff;
+  margin: 0;
+  padding: 5% 10%;
+  min-height: 200px;
+}
+
+.centertext{
+  text-align: center;
+}
+
+
+
+@media (min-width: 720px)
+{
+  .maintext.contact
+  {
+    padding: 5% 20%;
+  }
+}
+
+
+
+
+/*============================= 2. LAYOUT =============================*/
+
+.row
+{
+
+}
+
+.twocolumn
+{
+  float: left;
+  width: 50%;
+  overflow-wrap: break-word;
+}
+
+
+
+
+
+/*========================= 4. HEADER =============================*/
+
+header
+{
+  background: #B5DFD4;
+  margin: 0;
+  padding: 1em;
+}
+
+
+.logo h2
+{
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  margin-top: 0;
+  line-height: 0;
+  padding: 0;
+}
+
+.logo img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+
+
+/*===================== 5. FOOTER =============================*/
+
+footer
+{
+  background: #B5DFD4;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+}
+
+.credits p
+{
+  font-size: 0.75em;
+}
+
+
+/*===================== 6. NAVIGATION ======================== */
+
+
+nav
+{
+  display: block;
+}
+
+.topnav
+{
+  list-style-type: none;
+  background-color: #FEFDCE;
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.topnav a
+{
+  font-size: 1em;
+  font-weight: normal;
+  color: #44495D;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2em;
+}
+
+.topnav a.active
+{
+  font-weight: bold;
+}
+
+/*
+.dropdown:hover a
+{
+color: #B5DFD4;
+transition: all .4s ease;
+-webkit-transition: all .4s ease; /*safari and chrome
+}
+*/
+
+@media (min-width: 500px) /*start of circle*/
+{
+
+  .topnav {
+    justify-content: center; /*centers the navigations if not in mobile form*/
+    display: flex;
+  }
+
+  .circle {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+
+  .circle svg {
+    position: absolute;
+    top: -0.25em;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    pointer-events: none;
+  }
+
+  .circle path {
+    stroke: #44495D;
+    stroke-width: 12px;
+    stroke-dasharray: 0 1500;
+  }
+
+  .circle:hover path {
+    animation: draw 1s forwards;
+  }
+
+  @keyframes draw {
+    from {
+      stroke-dasharray: 0 1500;
+    }
+
+    to {
+      stroke-dasharray: 1500 1500;
+    }
+  }
+  } /*end of Circle*/
+
+  @media (max-width: 500px)
+  {
+    .circle {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+
+    .circle svg {
+      position: absolute;
+      top: -0.25em;
+      left: 0;
+      width: 100%;
+      height: 130%;
+      pointer-events: none;
+    }
+
+  }
+
+
+  /*=====================8. INDEX===============================*/
+
+  .index
+  {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+
+  }
+
+  .hoverrotate img
+  {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    width: 25%;
+    filter: invert(27%) sepia(24%) saturate(445%) hue-rotate(190deg) brightness(95%) contrast(92%);
+  }
+
+
+  .index h1
+  {
+  font-size: 1.5rem;
+  font-weight: normal;
+  }
+
+
+  .hoverrotate img:hover
+  {
+    transform: rotateZ(360deg);
+    transition: 3s ease;
+  }
+
+  .hide
+  {
+    opacity: 0;
+  }
+
+  /*.hide h1
+  {
+  text-align: left;
+  padding-top: 3em;
+  margin-left: 5%;
+  }*/
+
+  .hide h1{
+    padding-top: 30%;
+    margin: 0;
+  }
+
+  .hoverrotate img:hover + .hide
+  {
+    transition: 2s;
+    opacity: 1;
+  }
+
+
+  /*=====================9. RESUME================================*/
+
+  .resume iframe
+  {
+    width: 70%;
+    height: 500px;
+    border-style: solid;
+    border-color: #44495D;
+    border-width: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+
+
+
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #B5DFD4;
+    cursor: pointer;
+    padding: 1.5em 2em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1em;
+    font-weight: normal;
+    color: #44495D;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .accordionactive, .accordion:hover {
+    background-color: #e4e4e4;
+    text-decoration: none;
+    text-decoration-thickness: 0;
+    text-underline-offset: 0;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .accordionpanel {
+  padding: 0.5em 2em;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 0.8em;
+  color: #44495D;
+  float: right;
+  margin-left: 0.4em;
+}
+
+.accordionactive:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+  /*====================11. ART=====================================*/
+
+  .gallery
+  {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .gallery img
+  {
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    padding: 1em;
+  }
+
+  .gallery img:hover
+  {
+    opacity: 0.5;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease; /*safari and chrome*/
+  }
+
+
+  /*====================== CONTACT ==================================*/
+
+  .triangle-isosceles-left
+  {
+    width: 50%;
+    position:relative;
+    padding:15px;
+    margin:1em 0 3em;
+    color:#44495D;
+    background:#B5DFD4; /* default background for browsers without gradient support */
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border-radius:20px;
+    text-align: center;
+    float: left;
+    overflow-wrap: break-word;
+
+  }
+
+  .triangle-isosceles-left:after
+  {
+    content:"";
+    position:absolute;
+    bottom:-15px; /* value = - border-top-width - border-bottom-width */
+    left:15%; /* controls horizontal position */
+    border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
+    border-style:solid;
+    border-color:#B5DFD4 transparent;
+    /* reduce the damage in FF3.0 */
+    display:block;
+    width:0;
+  }
+
+
+  .triangle-isosceles-right
+  {
+    width: 50%;
+    position:relative;
+    padding:15px;
+    margin:1em 0 3em;
+    color:#44495D;
+    background:#B5DFD4; /* default background for browsers without gradient support */
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border-radius:20px;
+    text-align: center;
+    float: right;
+    overflow-wrap: break-word;
+  }
+
+  .triangle-isosceles-right:after
+  {
+    content:"";
+    position:absolute;
+    bottom:-15px; /* value = - border-top-width - border-bottom-width */
+    left:75%; /* controls horizontal position */
+    border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
+    border-style:solid;
+    border-color:#B5DFD4 transparent;
+    /* reduce the damage in FF3.0 */
+    display:block;
+    width:0;
+  }
+
+  .contact-left h2
+  {
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 0.5em;
+    color: #44495D;
+    margin: 0;
+    text-align: left;
+  }
+
+
+  .contact-right h2
+  {
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 0.5em;
+    color: #44495D;
+    margin: 0;
+    text-align: right;
+  }
+
+
+
+  /*===================== 7. MEDIA QUERIES DESKTOP======================== */
+
+@media (min-width: 500px)
+{
+  .indexmobile
+  {
+    display: none;
+  }
+}
+
+  @media (max-width: 720px)
+  {
+
+    .topnav a
+    {
+      font-size: 0.9em;
+      padding: 1.5em;
+    }
+
+    .topnav
+    {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+
+    .logo img
+    {
+      width: 40%;
+    }
+
+    .index h1
+    {
+    font-size: 1rem;
+    }
+
+    .gallery img
+    {
+      padding: 0.5em;
+      height: 150px;
+    }
+
+    .contact-left h2
+    {
+      font-family: Verdana, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 0.5em;
+      color: #44495D;
+      margin: 0;
+      text-align: left;
+    }
+
+    .contact-right h2
+    {
+      font-family: Verdana, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 0.5em;
+      color: #44495D;
+      margin: 0;
+      text-align: right;
+    }
+
+  }
+
+  @media (min-width: 1024px)
+  {
+
+  }
