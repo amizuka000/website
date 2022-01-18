@@ -21,7 +21,7 @@ body
   font-family: Verdana, sans-serif;
   font-size: 15px;
   font-weight: normal;
-  line-height: 1.6em;
+  line-height: 1.6;
   color: #44495D;
   margin: 0;
   letter-spacing: 0.05em;
@@ -117,9 +117,6 @@ hr {
     padding: 5% 20%;
   }
 }
-
-
-
 
 /*============================= 2. LAYOUT =============================*/
 
@@ -636,10 +633,9 @@ vertical-align: top;
 .projectsindividual h1{
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
-  padding-right: 2em;
-  overflow: auto;
+  padding-right: 2rem;
   overflow-wrap: break-word;
 }
 
@@ -647,15 +643,14 @@ vertical-align: top;
   text-transform: uppercase;
   text-decoration: underline;
   letter-spacing: 0.05em;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
-  padding-right: 2em;
-  overflow: auto;
+  padding-right: 2rem;
   overflow-wrap: break-word;
 }
 
-.projectsindividual p{
-  padding-right: 2em;
+.projectsindividual p {
+  padding-right: 2rem;
 }
 
 
@@ -663,10 +658,17 @@ vertical-align: top;
   border-left-style: solid;
   border-width: 1px;
 }
+.sidebar h2 {
+padding-left: 2rem;
+}
 
-.sidebar p, .sidebar h2 {
+.sidebar iframe {
+padding-left: 2rem;
+}
+
+.sidebar p {
   font-size: 0.8em;
-  padding-left: 2em;
+  padding-left: 2rem;
 }
 
 
@@ -925,7 +927,7 @@ vertical-align: top;
     font-family: Verdana, sans-serif;
     font-size: 25px;
     font-weight: bold;
-    line-height: 0.5em;
+    line-height: 0.5;
     color: #44495D;
     margin: 0;
     text-align: left;
@@ -937,7 +939,7 @@ vertical-align: top;
     font-family: Verdana, sans-serif;
     font-size: 25px;
     font-weight: bold;
-    line-height: 0.5em;
+    line-height: 0.5;
     color: #44495D;
     margin: 0;
     text-align: right;
@@ -1009,7 +1011,7 @@ vertical-align: top;
       font-family: Verdana, sans-serif;
       font-size: 15px;
       font-weight: bold;
-      line-height: 0.5em;
+      line-height: 0.5;
       color: #44495D;
       margin: 0;
       text-align: left;
@@ -1020,7 +1022,7 @@ vertical-align: top;
       font-family: Verdana, sans-serif;
       font-size: 15px;
       font-weight: bold;
-      line-height: 0.5em;
+      line-height: 0.5;
       color: #44495D;
       margin: 0;
       text-align: right;
