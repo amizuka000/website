@@ -442,7 +442,7 @@ transition: all .4s ease;
 
   /*=====================9. RESUME================================*/
 
-  .resume iframe
+  .resume
   {
     width: 70%;
     height: 500px;
@@ -969,8 +969,12 @@ padding-left: 2rem;
 
     /*When screen gets too thin, multiple columns get consolidated
     into one column*/
-    .mobilecolumn p, .mobilecolumn h2{
+    .mobilecolumn p, .mobilecolumn h2, .mobilecolumn iframe{
       padding-left:0;
+    }
+
+    .sidebar p {
+      font-size: 1em;
     }
 
     /*When screen gets too thin, images get deleted to allow max text*/
