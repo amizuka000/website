@@ -2,51 +2,51 @@
 {
 
 
-    .projectscolumn img, .projectscolumn iframe{
-      display: none;
-    }
+  .projectscolumn img, .projectscolumn iframe{
+    display: none;
+  }
 
   .logo h2 {
     font-size: 0.75em;
   }
 
   .twentyfivecolumn img{
-   display: none;
+    display: none;
   }
 
-.mobilecolumn{
-  width: 100%;
-}
+  .mobilecolumn{
+    width: 100%;
+  }
 
-.mobilecolumn p{
-  padding-left:0;
-}
+  .mobilecolumn p{
+    padding-left:0;
+  }
 
 
-.artnumbertext {
-  display: none;
-}
+  .artnumbertext {
+    display: none;
+  }
 
 
 
   /*.index
   {
-    display: none;
-  }
+  display: none;
+}
 
-  .indexmobile
-  {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-  }
+.indexmobile
+{
+width: 100%;
+display: inline-block;
+text-align: center;
+}
 
-  .indexmobile img
-  {
-    width: 50%;
-    padding: 1em;
-    filter: invert(27%) sepia(24%) saturate(445%) hue-rotate(190deg) brightness(95%) contrast(92%);
-  }
+.indexmobile img
+{
+width: 50%;
+padding: 1em;
+filter: invert(27%) sepia(24%) saturate(445%) hue-rotate(190deg) brightness(95%) contrast(92%);
+}
 
 */
 
@@ -65,7 +65,15 @@
 @media screen and (max-width: 500px) {
 
 
-  .topnav a {display: none;}
+  .topnav div {
+    float: left;
+  }
+
+
+  .topnav a {
+    display: none;
+  }
+
   .topnav a.icon{
     float: right;
     display: block;
@@ -73,6 +81,7 @@
 
   .topnav a.active {
     display: block;
+
   }
 
 
@@ -80,13 +89,14 @@
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 500px) {
-  .topnav.responsive
-  {position: relative;
+
+  .topnav.responsive {
+    position: relative;
   }
   .topnav.responsive a.icon {
     position: absolute;
-       right: 0;
-       top: 0.5rem;
+    right: 0;
+    top: 0.5rem;
   }
 
 
@@ -97,8 +107,10 @@
   }
 
   .topnav.responsive div {
-    display: block;
+    float: left;
+    width: 100%;
   }
+
 
 
 }
