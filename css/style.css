@@ -880,6 +880,7 @@ padding-left: 2rem;
     opacity: 0.5;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
+    cursor: pointer;
   }
 
   /*====================== CONTACT ==================================*/
