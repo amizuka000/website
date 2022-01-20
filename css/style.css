@@ -640,6 +640,7 @@ vertical-align: top;
 }
 }
 
+
 /*==========PROJECTS - INDIVIDUAL PROJECT PAGES======================*/
 
 
@@ -673,6 +674,23 @@ vertical-align: top;
 */
 
 
+.projectsindividualoneimg img{
+  max-width: 100%;
+width: auto;
+height:250px;
+}
+
+.projectsindividualthreeimg img{
+max-width:30%;
+width: auto;
+height:250px;
+}
+
+.projectsindividualtwoimg img{
+  max-width:45%;
+  width: auto;
+  height:250px;
+}
 
 .sidebar {
   border-left-style: solid;
