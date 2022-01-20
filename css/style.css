@@ -34,7 +34,6 @@ a
   color: #44495D;
   text-decoration: none;
   letter-spacing: 0.05em;
-  padding: 2em;
 }
 
 
@@ -232,6 +231,7 @@ header
   margin-left: auto;
   margin-right: auto;
   width: 30%;
+  padding: 2em;
 }
 
 
