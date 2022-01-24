@@ -411,7 +411,7 @@ transition: all .4s ease;
   }
 
   .index p{
-    text-align: left;
+    text-align: center;
   }
 
 
@@ -440,11 +440,13 @@ transition: all .4s ease;
 
 
 
+
   .hoverrotate img:hover + .hide, .hoverfloat img:hover + .hide
   {
     transition: 2s;
     opacity: 1;
   }
+
 
 
   /*=====================9. RESUME================================*/
