@@ -1,6 +1,9 @@
 @media (max-width: 500px)
 {
 
+  .artcolumn img{
+    height: 150px;
+  }
 
   .projectscolumn img, .projectscolumn iframe{
     display: none;
