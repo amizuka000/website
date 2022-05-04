@@ -25,6 +25,10 @@
     padding-left:0;
   }
 
+  .skillstablecontainer{
+    display: block;
+  }
+
 
   .artnumbertext {
     display: none;

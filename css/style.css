@@ -540,6 +540,14 @@ transition: all .4s ease;
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
+.skillstablecontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  width: 100%;
+}
+
+
 /*====================11. PROJECTS=====================================*/
 
 
