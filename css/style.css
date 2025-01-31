@@ -201,7 +201,7 @@ hr {
 .eightyfivecolumn p {
   float: left;
   padding-left: 2em;
-  width: 90%;
+  padding-right: 1em;
 }
 
 

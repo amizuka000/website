@@ -27,6 +27,7 @@
 
   .mobilecolumn p{
     padding-left:0;
+    padding-right: 0;
   }
 
   .skillstablecontainer{
@@ -59,6 +60,15 @@
   }
 
 
+/*increases usable space of accordion if screen is small*/
+    .accordion {
+      padding: 1em 1em;
+    }
+
+    .accordionpanel
+    {
+    padding: 0.5em 1em;
+  }
 
   /*.index
   {
@@ -237,9 +247,6 @@ into one column*/
     text-align: right;
   }
 
-  .accordion {
-    padding: 1em 2em;
-  }
 
   button {
     padding: 1em 2em;
