@@ -349,6 +349,8 @@ transition: all .4s ease;
   }
   } /*end of Circle*/
 
+
+/*Removes the circle for less than 500px*/
   @media (max-width: 500px)
   {
     .circle {
@@ -986,7 +988,7 @@ padding-left: 2rem;
   .contact-left h2
   {
     font-family: Verdana, sans-serif;
-    font-size: 25px;
+    font-size: 1.25em;
     font-weight: bold;
     line-height: 0.5;
     color: #44495D;
@@ -998,113 +1000,10 @@ padding-left: 2rem;
   .contact-right h2
   {
     font-family: Verdana, sans-serif;
-    font-size: 25px;
+    font-size: 1.25em;
     font-weight: bold;
     line-height: 0.5;
     color: #44495D;
     margin: 0;
     text-align: right;
-  }
-
-
-
-  /*===================== 7. MEDIA QUERIES DESKTOP======================== */
-
-@media (min-width: 500px)
-{
-  .indexmobile
-  {
-    display: none;
-  }
-}
-
-  @media (max-width: 720px)
-  {
-
- /*When screen gets too thin, multiple columns get consolidated
- into one column*/
-    .mobilecolumn{
-      width: 100%;
-      border-style: none;
-      padding-left: 0;
-    }
-
-    /*When screen gets too thin, multiple columns get consolidated
-    into one column*/
-  /*  .mobilecolumn p, .mobilecolumn h2, .mobilecolumn iframe{
-      padding-left:0;
-    }
-*/
-    .sidebar p {
-      font-size: 1em;
-    }
-
-    /*When screen gets too thin, images get deleted to allow max text*/
-    .twentyfivecolumn img{
-     display: none;
-    }
-
-    .topnav a
-    {
-      font-size: 0.9em;
-      padding: 1.5em;
-    }
-
-    .topnav
-    {
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
-    }
-
-    .logo img
-    {
-      width: 40%;
-    }
-
-    .index h1
-    {
-    font-size: 1rem;
-    }
-
-    .gallery img
-    {
-      padding: 0.5em;
-      height: 150px;
-    }
-
-    .contact-left h2
-    {
-      font-family: Verdana, sans-serif;
-      font-size: 15px;
-      font-weight: bold;
-      line-height: 0.5;
-      color: #44495D;
-      margin: 0;
-      text-align: left;
-    }
-
-    .contact-right h2
-    {
-      font-family: Verdana, sans-serif;
-      font-size: 15px;
-      font-weight: bold;
-      line-height: 0.5;
-      color: #44495D;
-      margin: 0;
-      text-align: right;
-    }
-
-    .accordion {
-      padding: 1em 2em;
-    }
-
-    button {
-      padding: 1em 2em;
-    }
-
-  }
-
-  @media (min-width: 1024px)
-  {
-
   }
