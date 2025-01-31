@@ -304,7 +304,7 @@ transition: all .4s ease;
 }
 */
 
-@media (min-width: 500px) /*start of circle*/
+@media (min-width: 500px) and (pointer: fine) /*start of circle*/
 {
 
   .topnav {
@@ -370,6 +370,34 @@ transition: all .4s ease;
     }
 
   }
+
+
+/*Removes circle if the pointer is coarse, regardless of screen size*/
+  @media (min-width: 500px) and (pointer: coarse) /*start of circle*/
+  {
+
+    .topnav {
+      justify-content: center; /*centers the navigations if not in mobile form*/
+      display: flex;
+    }
+
+    .circle {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+
+    .circle svg {
+      position: absolute;
+      top: -0.25em;
+      left: 0;
+      width: 100%;
+      height: 130%;
+      pointer-events: none;
+    }
+  }
+
 
 
   /*=====================8. INDEX===============================*/
