@@ -17,7 +17,7 @@
     font-size: 0.75em;
   }
 
-  .twentyfivecolumn img{
+  .fifteencolumn img{
     display: none;
   }
 
@@ -184,7 +184,7 @@ into one column*/
   }
 
   /*When screen gets too thin, images get deleted to allow max text*/
-  .twentyfivecolumn img{
+  .fifteencolumn img{
    display: none;
   }
 

@@ -149,17 +149,19 @@ hr {
   float: left;
 }
 
-.twentyfivecolumn
+.fifteencolumn
 {
   float: left;
-  width: 25%;
+  width: 15%;
   overflow-wrap: break-word;
 }
 
-.twentyfivecolumn img{
-  width: 60%;
-  margin: 1em;
-  float: left;
+.fifteencolumn img{
+  width: 70%;
+  margin-top: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*used for sidebar formatted pages*/
@@ -189,16 +191,17 @@ hr {
 }
 
 
-.seventyfivecolumn{
+.eightyfivecolumn{
   float: left;
-  width: 75%;
+  width: 85%;
   overflow-wrap: break-word;
 }
 
 
-.seventyfivecolumn p {
+.eightyfivecolumn p {
   float: left;
   padding-left: 2em;
+  width: 90%;
 }
 
 
