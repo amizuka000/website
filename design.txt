@@ -1,9 +1,14 @@
 #e6edf9 - light blue
-#44495D - dark blue
-#B5DFD4 - light green
-#FEFDCE  - yellow
+#44495D - dark blue (text)
+#B5DFD4 - light green (main website color)
+#F0ECE2  - yellow
 #FFFEF2 - cream
 #e4e4e4 - light grey (accordion)
+
+New as of 1/31/25:
+#891204 - burgundy
+#F0ECE2 - cream
+#D9D3C0 - beige (accordion)
 
 
 Circle hover
