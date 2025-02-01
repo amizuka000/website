@@ -152,6 +152,7 @@
     .topnav a.icon{
       float: right;
       display: block;
+      font-size: 1em;
     }
 
     .topnav a.active {
@@ -166,7 +167,7 @@
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
-      top: 0.5rem;
+      top: 0.5em;
     }
 
     .topnav.responsive a {

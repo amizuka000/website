@@ -350,6 +350,23 @@ nav{
   }
 
 
+/*======================= SCROLL TO TOP ==========================*/
+
+
+.scrolltop {
+  --offset: 50px;
+  position: sticky;
+  bottom: 1em;
+  z-index: 99; /* Make sure it does not overlap */
+  margin-top: calc(100vh + var(--offset));
+
+  /* visual styling */
+  padding: 1em;
+  color: #44495D;
+  background: #F0ECE2;
+  border-radius: 2em;
+  font-size: 1em;
+}
 
   /*========================= INDEX ===========================*/
 
