@@ -1,23 +1,8 @@
-/*
-1. General
-2. Layout
-3. Responsive Media
-4. Header
-5. Footer
-6. Navigation
-LAST. Media Queries
-8. Index
-9. Resume
-10. Projects
-11. Art
-
-*/
 
 
-/*=========================== 1. GENERAL ============================*/
+/*=========================== GENERAL ============================*/
 
-body
-{
+body{
   font-family: Verdana, sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -28,8 +13,7 @@ body
 }
 
 
-a
-{
+a{
   font-size: 1em;
   color: #44495D;
   text-decoration: none;
@@ -37,8 +21,7 @@ a
 }
 
 
-a:hover
-{
+a:hover{
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
@@ -89,8 +72,7 @@ hr {
   border: none;
 }
 
-.maintext
-{
+.maintext{
   background-color: #fff;
   margin: 0;
   padding: 5% 10%;
@@ -108,18 +90,15 @@ hr {
 
 
 
-@media (min-width: 720px)
-{
-  .maintext.contact
-  {
+@media (min-width: 720px){
+  .maintext.contact{
     padding: 5% 20%;
   }
 }
 
-/*============================= 2. LAYOUT =============================*/
+/*============================= LAYOUT =============================*/
 
-.row:after
-{
+.row:after{
     content: "";
     display: table;
     clear: both;
@@ -135,10 +114,7 @@ hr {
   width: 100%;
 }
 
-
-
-.fiftycolumn
-{
+.fiftycolumn{
   float: left;
   width: 50%;
   overflow-wrap: break-word;
@@ -149,8 +125,8 @@ hr {
   float: left;
 }
 
-.fifteencolumn
-{
+/*Used for resume icon images*/
+.fifteencolumn{
   float: left;
   width: 15%;
   overflow-wrap: break-word;
@@ -190,7 +166,7 @@ hr {
   width: 100%;
 }
 
-
+/*Used for resume text*/
 .eightyfivecolumn{
   float: left;
   width: 85%;
@@ -206,18 +182,16 @@ hr {
 
 
 
-/*========================= 4. HEADER =============================*/
+/*========================= HEADER =============================*/
 
-header
-{
-  background: #891240;
+header{
+  background: #891240; /*top burgundy portion*/
   margin: 0;
   padding: 1em;
 }
 
 
-.logo h2
-{
+.logo h2{
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-align: center;
@@ -229,8 +203,7 @@ header
   color: #F0ECE2;
 }
 
-.logo img
-{
+.logo img{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -238,40 +211,30 @@ header
   padding: 2em;
 }
 
-.frontpage img
-{
-  /*margin: auto;*/
-  width: 33.33%;
-}
 
+/*===================== FOOTER =============================*/
 
-/*===================== 5. FOOTER =============================*/
-
-footer
-{
+footer{
   background: #891240;
   margin: 0;
   padding: 1em;
   text-align: center;
 }
 
-.credits p
-{
+.credits p{
   font-size: 0.75em;
   color: #F0ECE2;
 }
 
 
-/*===================== 6. NAVIGATION ======================== */
+/*===================== NAVIGATION ======================== */
 
 
-nav
-{
+nav{
   display: block;
 }
 
-.topnav
-{
+.topnav{
   list-style-type: none;
   background-color: #F0ECE2;
   margin: 0;
@@ -279,11 +242,9 @@ nav
   padding-bottom: 1em;
   overflow: hidden;
   width: 100%;
-
 }
 
-.topnav a
-{
+.topnav a{
   font-size: 1em;
   font-weight: normal;
   color: #44495D;
@@ -293,22 +254,13 @@ nav
   padding: 2em;
 }
 
-.topnav a.active
-{
+.topnav a.active{
   font-weight: bold;
 }
 
-/*
-.dropdown:hover a
-{
-color: #F0ECE2;
-transition: all .4s ease;
--webkit-transition: all .4s ease; /*safari and chrome
-}
-*/
 
-@media (min-width: 500px) and (pointer: fine) /*start of circle*/
-{
+/*Circle navigation animation*/
+@media (min-width: 500px) and (pointer: fine){
 
   .topnav {
     justify-content: center; /*centers the navigations if not in mobile form*/
@@ -354,14 +306,12 @@ transition: all .4s ease;
 
 
 /*Removes the circle for less than 500px*/
-  @media (max-width: 500px)
-  {
+  @media (max-width: 500px){
     .circle {
       position: relative;
       display: inline-block;
       cursor: pointer;
     }
-
 
     .circle svg {
       position: absolute;
@@ -375,9 +325,8 @@ transition: all .4s ease;
   }
 
 
-/*Removes circle if the pointer is coarse, regardless of screen size*/
-  @media (min-width: 500px) and (pointer: coarse) /*start of circle*/
-  {
+/*Removes circle if the pointer is coarse (touch panel), regardless of screen size*/
+  @media (min-width: 500px) and (pointer: coarse){
 
     .topnav {
       justify-content: center; /*centers the navigations if not in mobile form*/
@@ -390,7 +339,6 @@ transition: all .4s ease;
       cursor: pointer;
     }
 
-
     .circle svg {
       position: absolute;
       top: -0.25em;
@@ -403,49 +351,17 @@ transition: all .4s ease;
 
 
 
-  /*=====================8. INDEX===============================*/
+  /*========================= INDEX ===========================*/
 
-  .index
-  {
+  .index{
     width: 100%;
     display: inline-block;
     text-align: center;
     position: relative;
-
   }
 
 
-/*
-  .hoverrotate img
-  {
-    z-index: 3;
-    position: absolute;
-    top: 0;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    width: 25%;
-    filter: invert(27%) sepia(24%) saturate(445%) hue-rotate(190deg) brightness(95%) contrast(92%);
-  }
-  */
-
-  .hoverrotate img /* for rotating gear, obsolete 1/31/2025*/
-  {
-    margin-left:auto;
-    margin-right:auto;
-    width: 75%;
-    filter: invert(27%) sepia(24%) saturate(445%) hue-rotate(190deg) brightness(95%) contrast(92%);
-  }
-
-  .hoverfloat img:hover{
-    transform: translateY(-1em);
-    transition: 1s ease;
-  }
-
-
-  .index h1
-  {
+  .index h1{
   font-size: 1.5rem;
   font-weight: normal;
   }
@@ -455,44 +371,14 @@ transition: all .4s ease;
   }
 
 
-  .hoverrotate img:hover
-  {
-    transform: rotateZ(360deg);
-    transition: 3s ease;
+/*========================= ABOUT ME ============================*/
+  .profilephoto img{
+    width: 33.33%;
   }
 
-  .hide
-  {
-    opacity: 0;
-  }
+  /*========================= RESUME ================================*/
 
-  /*.hide h1
-  {
-  text-align: left;
-  padding-top: 3em;
-  margin-left: 5%;
-  }*/
-
-  .hide h1{
-    padding-top: 1em;
-    margin: 0;
-  }
-
-
-
-
-  .hoverrotate img:hover + .hide, .hoverfloat img:hover + .hide
-  {
-    transition: 2s;
-    opacity: 1;
-  }
-
-
-
-  /*=====================9. RESUME================================*/
-
-  .resume
-  {
+  .resume{
     width: 70%;
     height: 500px;
     border-style: solid;
@@ -504,8 +390,6 @@ transition: all .4s ease;
     margin-top: 3em;
     margin-bottom: 3em;
   }
-
-
 
 
   /* Style the buttons that are used to open and close the accordion panel */
@@ -544,7 +428,6 @@ transition: all .4s ease;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-
   }
 
   .accordionpanel iframe{
@@ -553,19 +436,6 @@ transition: all .4s ease;
     height: 100%;
     border-style: hidden;
   }
-
-/*
-  .accordionpanel.education img{
-    width: 15%;
-    margin: 1em;
-    float: left;
-  }
-
-  .accordionpanel.education p {
-    float: left;
-    padding-left: 2em;
-  }
-  */
 
   .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -588,47 +458,7 @@ transition: all .4s ease;
 }
 
 
-/*====================11. PROJECTS=====================================*/
-
-
-/*
-.projectscolumn{
-  display: inline-block;
-  background-color: #F0ECE2;
-  height: 300px;
-  text-align: center;
-  padding: 1em;
-  width: 25%;
-  vertical-align: top;
-
-  margin-bottom: 3.5%;
-}
-
-.projectscolumn h1{
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 1em;
-  font-weight: normal;
-  padding: 1em;
-
-}
-
-.projectscolumn img{
-  width:90%;
-  height: 200px;
-  background-color: white;
-  object-fit: scale-down;
-  padding: 5%;
-}
-
-.projectscolumn iframe{
-  width:90%;
-  height: 200px;
-  background-color: white;
-  object-fit: scale-down;
-  padding: 5%;
-}
-*/
+/*========================== PROJECTS ===================================*/
 
 .projectsrow:after {
   content: "";
@@ -655,12 +485,9 @@ vertical-align: top;
 }
 
 .projectscolumn:hover{
-  opacity: 0.5;
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  background-color: #D9D3C0;
+  transition: 0.4s;
 }
-
-
 
 .projectscolumn img, .projectscolumn iframe{
   width: 100%;
@@ -668,6 +495,7 @@ vertical-align: top;
   background-color: white;
   object-fit: scale-down;
 }
+
 
 
 .projectscolumn h1{
@@ -681,9 +509,7 @@ vertical-align: top;
 }
 
 
-
 @media (max-width: 900px){
-
 /*this width keeps it centered for some reason*/
 .projectscolumn{
   width: 90%;
@@ -692,8 +518,7 @@ vertical-align: top;
 }
 
 
-/*==========PROJECTS - INDIVIDUAL PROJECT PAGES======================*/
-
+/*========== PROJECTS - INDIVIDUAL PROJECT PAGES======================*/
 
 
 .projectsindividual h1{
@@ -717,13 +542,6 @@ vertical-align: top;
 .projectsindividual .sixtycolumn{
   padding-right: 2%;
 }
-
-/*
-.projectsindividual p {
-  padding-right: 2rem;
-}
-*/
-
 
 .projectsindividualoneimg img{
   max-width: 100%;
@@ -749,48 +567,13 @@ height:250px;
   padding-left: 3%;
 }
 
-/*
-.sidebar h2 {
-padding-left: 2rem;
-}
-
-.sidebar iframe {
-padding-left: 2rem;
-}
-*/
-
 .sidebar p {
   font-size: 0.8em;
   /*padding-left: 2rem;*/
 }
 
 
-
-  /*====================11. ART=====================================*/
-
-/*
-  .gallery
-  {
-    display: inline-block;
-    text-align: center;
-  }
-
-  .gallery img
-  {
-    width: 25%;
-    height: 300px;
-    object-fit: cover;
-    padding: 1em;
-  }
-
-  .gallery img:hover
-  {
-    opacity: 0.5;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-  }
-  */
-
+  /*============================= ART ===========================*/
 
   .artrow:after {
     content: "";
@@ -858,7 +641,6 @@ padding-left: 2rem;
     display: none;
     text-align: center;
     background-color:#F0ECE2 ;
-
   }
 
   .artmySlides img{
@@ -896,7 +678,6 @@ padding-left: 2rem;
     background-color: #44495D;
     color: #F0ECE2;
     text-decoration: none;
-
   }
 
   /* Number text (1/3 etc) */
@@ -920,59 +701,35 @@ padding-left: 2rem;
     color:#44495D;
   }
 
-/*
-  img.artdemo {
-    opacity: 0.6;
-    max-width: 100%;
-    height: 15vh;
-  }
-  */
-
-/*
-  .artactive,
-  .artdemo:hover {
-    opacity: 1;
-  }
-  */
-
-
   .artactive,
   .artalt:hover{
     opacity: 1;
   } /*artalt allows caption to show through js*/
 
-  img.arthover-shadow {
-    transition: 0.3s;
-  }
 
   .arthover-shadow:hover {
-    opacity: 0.5;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
+    filter: brightness(0.5);
+    transition: 0.4s;
     cursor: pointer;
   }
 
   /*====================== CONTACT ==================================*/
 
-  .triangle-isosceles-left
-  {
+  .triangle-isosceles-left{
     width: 50%;
     position:relative;
-    padding:15px;
-    margin:1em 0 3em;
+    padding:1em;
+    margin:1em 0 2em;
     color:#44495D;
-    background:#F0ECE2; /* default background for browsers without gradient support */
-    -webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    border-radius:20px;
+    background:#F0ECE2;
+    border-radius:1.5em;
     text-align: center;
     float: left;
     overflow-wrap: break-word;
 
   }
 
-  .triangle-isosceles-left:after
-  {
+  .triangle-isosceles-left:after{
     content:"";
     position:absolute;
     bottom:-15px; /* value = - border-top-width - border-bottom-width */
@@ -986,24 +743,20 @@ padding-left: 2rem;
   }
 
 
-  .triangle-isosceles-right
-  {
+  .triangle-isosceles-right{
     width: 50%;
     position:relative;
-    padding:15px;
-    margin:1em 0 3em;
+    padding:1em;
+    margin:1em 0 2em;
     color:#44495D;
-    background:#F0ECE2; /* default background for browsers without gradient support */
-    -webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    border-radius:20px;
+    background:#F0ECE2;
+    border-radius:1.5em;
     text-align: center;
     float: right;
     overflow-wrap: break-word;
   }
 
-  .triangle-isosceles-right:after
-  {
+  .triangle-isosceles-right:after{
     content:"";
     position:absolute;
     bottom:-15px; /* value = - border-top-width - border-bottom-width */
@@ -1016,8 +769,7 @@ padding-left: 2rem;
     width:0;
   }
 
-  .contact-left h2
-  {
+  .contact-left h2{
     font-family: Verdana, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
@@ -1028,8 +780,7 @@ padding-left: 2rem;
   }
 
 
-  .contact-right h2
-  {
+  .contact-right h2{
     font-family: Verdana, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
@@ -1038,3 +789,74 @@ padding-left: 2rem;
     margin: 0;
     text-align: right;
   }
+
+.typewriter p{
+  text-align: center;
+}
+
+@media (min-width:25em){
+
+  .typewriterwrapper {
+    max-width: calc(100%-10em);
+    padding: 1em;
+    margin: auto;
+    color:#44495D;
+    background:#FFFFFF;
+    border-color:#F0ECE2;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3em;
+    display: block;
+  }
+
+
+  .typewriter {
+    width: fit-content;
+    position:relative;
+    flex: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color:#44495D;
+    overflow-wrap: break-word;
+
+  }
+
+  .typewriter p{
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 3s steps(19), endblinking 3s steps(10);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-right: 2px solid #44495D;
+    text-align: center;
+    margin: 0 0;
+  }
+
+  @keyframes typewriter {
+      0%{
+          width: 0%;
+      }
+      66% {
+          width: 100%;
+      }
+      100% {
+        width: 100%;
+      }
+  }
+
+  @keyframes endblinking{
+    0%{
+      border-color: #44495D;
+    }
+    66%{
+      border-color: #44495D;
+    }
+    85%{
+      border-color: transparent;
+    }
+  100%{
+    border-color: #44495D;
+  }
+  }
+
+}/*end of 25em media query*/

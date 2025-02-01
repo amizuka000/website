@@ -1,22 +1,22 @@
-#e6edf9 - light blue
-#44495D - dark blue (text)
-#B5DFD4 - light green (main website color)
-#F0ECE2  - yellow
-#FFFEF2 - cream
-#e4e4e4 - light grey (accordion)
 
-New as of 1/31/25:
-#891204 - burgundy
-#F0ECE2 - cream
-#D9D3C0 - beige (accordion)
+This text file is information regarding the design of website & miscellaneous other notes
 
 
-Circle hover
+Color Scheme
+#44495D - dark blue/grey (text)
+#891204 - burgundy (header, footer)
+#F0ECE2 - cream (navigation bar, accordion, everything else)
+#D9D3C0 - dark cream (accordion hover)
+#FFFFFF - white (main)
+
+
+Circle Link Hover Source
 https://stackoverflow.com/questions/62672772/circle-around-link-on-hover
 https://jsfiddle.net/mjwkyc5o/
 
-Change color of black icons
-https://codepen.io/sosuke/pen/Pjoqqp
+Typewriter
+https://www.geeksforgeeks.org/how-to-create-typewriter-animation-using-html-and-css/
+
 
 d="
 M325,18
@@ -37,18 +37,3 @@ C386.7-4.9,179.4-1.4,126.3,20.7" />
   </svg>
   </div>
 </li>
-
-
-.gallery
-  {
-  display: inline-block;
-  text-align: center;
-  }
-
-.gallery img
-  {
-  width: 25%;
-  height: 300px;
-  object-fit: cover;
-  padding: 1em;
-  }
