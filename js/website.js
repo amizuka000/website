@@ -38,44 +38,55 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-/*=============== GALLERY LIGHTBOX============================+*/
-// Open the Modal
-function openModal() {
-  document.getElementById("artmyModal").style.display = "block";
-}
 
-// Close the Modal
-function closeModal() {
-  document.getElementById("artmyModal").style.display = "none";
-}
 
-var slideIndex = 1;
-showSlides(slideIndex);
+//=======================Scroll to topnav==============================
+// Get the button:
+let myScrollButton = document.getElementById("scrollButton");
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("artmySlides");
-  var dots = document.getElementsByClassName("artalt");
-  var captionText = document.getElementById("artcaption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    myScrollButton.style.display = "block";
+  } else {
+    myScrollButton.style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+
+//Don't go below footer
+  let footerElement = document.getElementById('footer');
+    let footerElementRect = footerElement.getBoundingClientRect();
+    let myScrollButtonPositionBottom = myScrollButton.offsetTop + myScrollButton.offsetHeight;
+    if (footerElementRect.y < myScrollButtonPositionBottom) {
+      // if button is lower than footer.
+      // modify css bottom.
+      let diffheight = myScrollButtonPositionBottom - footerElementRect.y;
+      let style = window.getComputedStyle(myScrollButton);
+      let addBottom = parseInt(style.getPropertyValue('bottom')) + diffheight + parseFloat(getComputedStyle(myScrollButton).fontSize); // Adding 1em space (based on font size)
+      myScrollButton.style.bottom = addBottom + 'px'; // maybe add more 10 px for bottom space of a button.
+    } else {
+      // if button is heigher than footer. this including scroll up.
+      // remove custom css bottom.
+      myScrollButton.style.bottom = '';
+    }
+
 }
+
+
+function topFunction() {
+  window.scrollTo({
+    top: 0,      // Scroll to the top of the page
+    left: 0,     // Keep horizontal position as 0 (if needed)
+    behavior: 'smooth'  // Apply smooth scroll
+  });
+}
+
+
+/*
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+*/

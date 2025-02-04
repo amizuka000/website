@@ -352,20 +352,24 @@ nav{
 
 /*======================= SCROLL TO TOP ==========================*/
 
-
-.scrolltop {
-  --offset: 50px;
-  position: sticky;
-  bottom: 1em;
+#scrollButton {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 1em; /* Place the button at the bottom of the page */
+  right: 2em; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  margin-top: calc(100vh + var(--offset));
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #F0ECE2; /* Set a background color */
+  color: #44495D; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 1em; /* Some padding */
+  border-radius: 2em; /* Rounded corners */
+  font-size: 1em; /* Increase font size */
+}
 
-  /* visual styling */
-  padding: 1em;
-  color: #44495D;
-  background: #F0ECE2;
-  border-radius: 2em;
-  font-size: 1em;
+#scrollButton:hover {
+  background-color: #D9D3C0; /* Add a dark-grey background on hover */
 }
 
   /*========================= INDEX ===========================*/
