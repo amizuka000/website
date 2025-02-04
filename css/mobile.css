@@ -30,15 +30,34 @@
     width: 100%;
     border-style: none;
     padding-left: 0;
+    padding-right: 0;
   }
+
 
   .sidebar p {
     font-size: 1em;
   }
 
+  .logo img{
+    width: 45%;
+    padding: 1em;
+  }
+
   /*When screen gets too thin, images get deleted to allow max text*/
   .fifteencolumn img{
    display: none;
+  }
+
+  .aboutme img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
+  .aboutme h1, .aboutme h2{
+    text-align: center;
   }
 
   .topnav a{
@@ -51,9 +70,7 @@
     padding-bottom: 0.5em;
   }
 
-  .index h1{
-  font-size: 1rem;
-  }
+
 
   .gallery img{
     padding: 0.5em;
@@ -104,18 +121,18 @@
     font-size: 0.75em;
   }
 
+  .logo img{
+    width: 60%;
+  }
+
   .fifteencolumn img{
     display: none;
   }
 
-  .mobilecolumn{
-    width: 100%;
+  .aboutme img{
+    width: 75%;
   }
 
-  .mobilecolumn p{
-    padding-left:0;
-    padding-right: 0;
-  }
 
   .skillstablecontainer{
     display: block;
@@ -125,13 +142,6 @@
     display: none;
   }
 
-  .profilephoto img{
-    width: 75%;
-  }
-
-  .logo img{
-    width: 60%;
-  }
 
   .triangle-isosceles-left{
     width: 75%;

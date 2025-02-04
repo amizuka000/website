@@ -9,7 +9,7 @@ body{
   line-height: 1.6;
   color: #44495D;
   margin: 0;
-  letter-spacing: 0.05em;
+  /*letter-spacing: 0.05em;*/
 }
 
 
@@ -17,7 +17,6 @@ a{
   font-size: 1em;
   color: #44495D;
   text-decoration: none;
-  letter-spacing: 0.05em;
 }
 
 
@@ -30,10 +29,22 @@ a:hover{
 }
 
 p{
-  letter-spacing: 0.05em;
+  /*letter-spacing: 0.05em;*/
   font-size: 1em;
   font-weight: normal;
   overflow-wrap: break-word;
+}
+
+h1{
+font-size: 1.5em;
+font-weight: bold;
+letter-spacing: 0.05em;
+}
+
+h2{
+  font-size: 1.1em;
+  font-weight: normal;
+  letter-spacing: 0.05em;
 }
 
 button {
@@ -122,6 +133,7 @@ hr {
   float: left;
 }
 
+
 /*Used for resume icon images*/
 .fifteencolumn{
   float: left;
@@ -205,7 +217,7 @@ header{
   margin-left: auto;
   margin-right: auto;
   width: 30%;
-  padding: 2em;
+  padding: 1.5em;
 }
 
 
@@ -379,19 +391,16 @@ nav{
   }
 
 
-  .index h1{
-  font-size: 1.5rem;
-  font-weight: normal;
-  }
-
   .index p{
     text-align: center;
   }
 
 
 /*========================= ABOUT ME ============================*/
-  .profilephoto img{
-    width: 33.33%;
+
+
+  .aboutme img{
+    width: 75%;
   }
 
   /*========================= RESUME ================================*/
@@ -549,7 +558,7 @@ vertical-align: top;
 
 .projectsindividual h2{
   text-transform: uppercase;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   letter-spacing: 0.05em;
   font-size: 1rem;
   font-weight: bold;
