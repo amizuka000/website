@@ -7,10 +7,17 @@
   display: none;
 }
 
-/*makes max size of scroll button font around 1em*/
+
 @media (min-width: 720px){
+
+  /*makes max size of scroll button font around 1em*/
   #scrollButton {
     font-size: 1em;
+  }
+
+  /*Increases margin for contact page to give it a "text message" feel even at larger screens*/
+  .maintext.contact{
+    margin: 5% 20%;
   }
 }
 

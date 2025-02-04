@@ -79,8 +79,8 @@ hr {
 
 .maintext{
   background-color: #fff;
-  margin: 0;
-  padding: 5% 10%;
+  margin: 5% 10%;
+  /*padding: 5% 10%;*/
   min-height: 200px;
 }
 
@@ -92,14 +92,6 @@ hr {
   display: inline-block;
 }
 
-
-
-
-@media (min-width: 720px){
-  .maintext.contact{
-    padding: 5% 20%;
-  }
-}
 
 /*============================= LAYOUT =============================*/
 
