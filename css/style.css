@@ -52,9 +52,14 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/*For button in resume, projects, things that don't need extra space above*/
+.linkbutton {
   margin-top: 0;
 }
 
@@ -355,17 +360,17 @@ nav{
 #scrollButton {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 1em; /* Place the button at the bottom of the page */
-  right: 2em; /* Place the button 30px from the right */
+  bottom: 0; /* Place the button at the bottom of the page */
+  right: 2vw; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: #F0ECE2; /* Set a background color */
   color: #44495D; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 1em; /* Some padding */
-  border-radius: 2em; /* Rounded corners */
-  font-size: 1em; /* Increase font size */
+  padding: 2%; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 2vw; /* Increase font size */
 }
 
 #scrollButton:hover {

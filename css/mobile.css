@@ -7,6 +7,12 @@
   display: none;
 }
 
+/*makes max size of scroll button font around 1em*/
+@media (min-width: 720px){
+  #scrollButton {
+    font-size: 1em;
+  }
+}
 
 /*=============================720px===============================*/
 /*Consolidates columns, removes images to increase space for text*/
