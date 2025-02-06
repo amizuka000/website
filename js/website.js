@@ -90,3 +90,36 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 */
+
+
+
+//====================Setting minimum content height for footer =============================
+//finding content margin height because it's not included in the clientHeight
+function getMarginHeight(marginElement) {
+  const style = getComputedStyle(marginElement);
+  const marginTop = parseInt(style.marginTop, 10);
+  const marginBottom = parseInt(style.marginBottom, 10);
+  return marginTop + marginBottom;
+}
+
+const marginElement = document.getElementById("contentHeight");
+const marginHeight = getMarginHeight(marginElement);
+var contentHeight = document.getElementById('contentHeight').clientHeight;
+
+function setContentHeight() {
+        if (contentHeight < window.innerHeight) {
+            var headerHeight = document.getElementById('header').clientHeight;
+            var footerHeight = document.getElementById('footer').clientHeight;
+            var navHeight = document.getElementById('myTopnav').clientHeight;
+            const windowHeight = window.innerHeight;
+
+            document.getElementById("contentHeight").style.height = `calc(${windowHeight}px -  ${headerHeight}px - ${footerHeight}px - ${navHeight}px - ${marginHeight}px)`;
+       }
+else{
+            document.getElementById("contentHeight").style.height = "";
+        }
+        //document.getElementById("contentHeight").style.top = `${headerHeight}px`;
+    }
+
+window.addEventListener('load', setContentHeight, true);
+window.addEventListener('resize', setContentHeight, true);

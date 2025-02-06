@@ -5,11 +5,15 @@
 // Open the Modal
 function openModal() {
   document.getElementById("artmyModal").style.display = "block";
+  document.getElementById("scrollButton").style.display = "none";
+  document.body.style.overflow = 'hidden';
 }
 
 // Close the Modal
 function closeModal() {
   document.getElementById("artmyModal").style.display = "none";
+  document.getElementById("scrollButton").style.display = "block";
+  document.body.style.overflow = 'auto';
 }
 
 var slideIndex = 1;

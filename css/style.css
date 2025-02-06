@@ -2,14 +2,20 @@
 
 /*=========================== GENERAL ============================*/
 
+
 body{
   font-family: Verdana, sans-serif;
-  font-size: 15px;
+  /*font-size: 15px;*/
   font-weight: normal;
   line-height: 1.6;
   color: #44495D;
-  margin: 0;
   /*letter-spacing: 0.05em;*/
+  max-width: 2000px;
+  margin-left:auto; /*to center the content after width=2000px*/
+  margin-right: auto;
+  margin-top:0;
+  margin-bottom:0;
+
 }
 
 
@@ -88,11 +94,11 @@ hr {
   border: none;
 }
 
+
 .maintext{
   background-color: #fff;
   margin: 5% 10%;
-  /*padding: 5% 10%;*/
-  min-height: 200px;
+  min-height:10px;
 }
 
 .centertext{
@@ -231,7 +237,7 @@ footer{
 }
 
 .credits p{
-  font-size: 0.75em;
+  font-size: 0.7em;
   color: #F0ECE2;
 }
 
@@ -365,21 +371,21 @@ nav{
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 0; /* Place the button at the bottom of the page */
-  right: 2vw; /* Place the button 30px from the right */
+  right: 1em;
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #F0ECE2; /* Set a background color */
-  color: #44495D; /* Text color */
+  background-color: #891240; /* Set a background color */
+  color: #F0ECE2;
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 2%; /* Some padding */
-  border-radius: 50%; /* Rounded corners */
-  font-size: 2vw; /* Increase font size */
+  padding: 1em; /* Some padding */
+  border-radius: 2em; /* Rounded corners */
+  font-size: 1em; /* Increase font size */
+  width: 3em;
+  height: 3em;
 }
 
-#scrollButton:hover {
-  background-color: #D9D3C0; /* Add a dark-grey background on hover */
-}
+
 
   /*========================= INDEX ===========================*/
 
@@ -500,15 +506,17 @@ nav{
 
 /* Create four equal columns that floats next to eachother */
 .projectscolumn {
-display: inline-block;
-vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
   height: 300px;
-  width: 25%;
+  width: 300px;/*25%;*/
   margin-bottom: 2%;
   background-color: #F0ECE2;
   margin-left: 1%;
   margin-right: 1%;
-  padding: 2.5%;
+  padding: 1em; /*2.5%;*/
+  overflow: auto;
+  overflow-wrap: break-word;
 }
 
 .projectscolumn:hover{
@@ -530,19 +538,9 @@ vertical-align: top;
   letter-spacing: 0.05em;
   font-size: 1em;
   font-weight: normal;
-  padding: 1em;
-  overflow: auto;
-  overflow-wrap: break-word;
 }
 
 
-@media (max-width: 900px){
-/*this width keeps it centered for some reason*/
-.projectscolumn{
-  width: 90%;
-  height: auto;
-}
-}
 
 
 /*========== PROJECTS - INDIVIDUAL PROJECT PAGES======================*/
@@ -602,23 +600,25 @@ height:250px;
 
   /*============================= ART ===========================*/
 
+/*
   .artrow:after {
     content: "";
     display: table;
     clear: both;
-  }
+  }*/
 
-  /* Create four equal columns that floats next to eachother */
-  .artcolumn {
-    float: left;
-    width: 33.33%;
-    margin-bottom: 3.5%;
-  }
+.artrow{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:3.5%;
+}
 
   .artcolumn img{
-    width: 90%;
+    width: 300px;/*33.33%*/
     height: 300px;
     object-fit: cover;
+    margin-bottom: 3.5%;
   }
 
   /* The Modal (background) */

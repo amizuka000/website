@@ -10,10 +10,7 @@
 
 @media (min-width: 720px){
 
-  /*makes max size of scroll button font around 1em*/
-  #scrollButton {
-    font-size: 1em;
-  }
+
 
   /*Increases margin for contact page to give it a "text message" feel even at larger screens*/
   .maintext.contact{
@@ -31,6 +28,12 @@
     border-style: none;
     padding-left: 0;
     padding-right: 0;
+  }
+
+/*this width keeps it centered for some reason*/
+  .projectscolumn{
+    width: 90%;
+    height: auto;
   }
 
 
@@ -101,6 +104,14 @@
     padding: 1em 2em;
   }
 
+
+  #scrollButton {
+    right: calc(50vw - 1.5em); /*centers*/
+    background-color: #891240; /* Set a background color */
+    color: #F0ECE2;
+  }
+
+
 }/*end of 720px*/
 
 
@@ -110,7 +121,10 @@
 @media (max-width: 500px){
 
   .artcolumn img{
-    height: 150px;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width:100%;
   }
 
   .projectscolumn img, .projectscolumn iframe{
@@ -203,5 +217,6 @@
       float: left;
       width: 100%;
     }
+
 
 } /*end of 500px*/
