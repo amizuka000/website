@@ -10,8 +10,6 @@
 
 @media (min-width: 720px){
 
-
-
   /*Increases margin for contact page to give it a "text message" feel even at larger screens*/
   .maintext.contact{
     margin: 5% 20%;
@@ -78,6 +76,15 @@
   .gallery img{
     padding: 0.5em;
     height: 150px;
+  }
+
+  .artprev,
+  .artnext {
+    display: none;
+  }
+
+  .artmodal-content {
+    margin: 4em 10%;
   }
 
   .contact-left h2{
