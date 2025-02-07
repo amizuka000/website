@@ -98,7 +98,6 @@ hr {
 .maintext{
   background-color: #fff;
   margin: 5% 10%;
-  min-height:10px;
 }
 
 .centertext{
@@ -190,7 +189,7 @@ hr {
 
 
 .eightyfivecolumn p {
-  float: left;
+  /*float: left;*/
   padding-left: 2em;
   padding-right: 1em;
 }
@@ -451,8 +450,6 @@ nav{
   .accordionactive, .accordion:hover {
     background-color: #D9D3C0;
     text-decoration: none;
-    text-decoration-thickness: 0;
-    text-underline-offset: 0;
   }
 
   /* Style the accordion panel. Note: hidden by default */

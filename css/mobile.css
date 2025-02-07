@@ -28,7 +28,9 @@
     padding-right: 0;
   }
 
-
+.mobilecolumn p{
+  padding-left:0;
+}
 
   .sidebar p {
     font-size: 1em;

@@ -84,12 +84,13 @@ function getMarginHeight() {
   const marginTop = parseInt(style.marginTop, 10);
   const marginBottom = parseInt(style.marginBottom, 10);
   return marginTop + marginBottom;
+
 }
+
 
 function setContentHeight() {
   const marginHeight = getMarginHeight();
   var contentHeightValue = document.body.clientHeight; //find the body height
-
         if (contentHeightValue < window.innerHeight) {
             var headerHeight = document.getElementById('header').clientHeight;
             var footerHeight = document.getElementById('footer').clientHeight;
@@ -104,15 +105,14 @@ else{
         //document.getElementById("contentHeight").style.top = `${headerHeight}px`;
     }
 
-window.addEventListener('load', setContentHeight, true);
-window.addEventListener('resize', setContentHeight, true);
+    window.addEventListener('load', setContentHeight, true);
+    window.addEventListener('resize', setContentHeight, true);
 
 
 /*=============== ACCORDION ============================+*/
 
 var acc = document.getElementsByClassName("accordion");
 var i;
-
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("accordionactive");
@@ -121,12 +121,7 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-
-        getMarginHeight();
-        setContentHeight();
-
     }
 
   });
-
 }
