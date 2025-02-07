@@ -28,11 +28,6 @@
     padding-right: 0;
   }
 
-/*this width keeps it centered for some reason*/
-  .projectscolumn{
-    width: 90%;
-    height: auto;
-  }
 
 
   .sidebar p {
@@ -134,9 +129,18 @@
     width:100%;
   }
 
+/*clears the 300px height requirement*/
+  .projectscolumn{
+    height: auto;
+    vertical-align: middle;
+    background-color: #F0ECE2;
+    padding:3.5%;
+  }
+
   .projectscolumn img, .projectscolumn iframe{
     display: none;
   }
+
 
   .logo h2 {
     font-size: 0.75em;

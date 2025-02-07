@@ -48,7 +48,7 @@ let myScrollButton = document.getElementById("scrollButton");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     myScrollButton.style.display = "block";
   } else {
     myScrollButton.style.display = "none";
@@ -104,10 +104,10 @@ function getMarginHeight(marginElement) {
 
 const marginElement = document.getElementById("contentHeight");
 const marginHeight = getMarginHeight(marginElement);
-var contentHeight = document.getElementById('contentHeight').clientHeight;
+var contentHeightValue = document.body.clientHeight; //find the body height
 
 function setContentHeight() {
-        if (contentHeight < window.innerHeight) {
+        if (contentHeightValue < window.innerHeight) {
             var headerHeight = document.getElementById('header').clientHeight;
             var footerHeight = document.getElementById('footer').clientHeight;
             var navHeight = document.getElementById('myTopnav').clientHeight;

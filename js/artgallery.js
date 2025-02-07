@@ -7,14 +7,19 @@ function openModal() {
   document.getElementById("artmyModal").style.display = "block";
   //previously used to hide scroll button on open modal - didn't work
   //document.getElementById("scrollButton").style.display = "none";
+
   document.body.style.overflow = 'hidden';
+
+
 }
 
 // Close the Modal
 function closeModal() {
   document.getElementById("artmyModal").style.display = "none";
   //document.getElementById("scrollButton").style.display = "";
+
   document.body.style.overflow = 'auto';
+
 }
 
 
@@ -35,7 +40,7 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("artmySlides");
   var dots = document.getElementsByClassName("artalt");
-  var captionText = document.getElementById("artcaption");
+  //var captionText = document.getElementById("artcaption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -46,5 +51,5 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  //captionText.innerHTML = dots[slideIndex-1].alt;
 }
