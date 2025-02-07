@@ -20,23 +20,6 @@ function myFunction() {
 }
 
 
-/*=============== ACCORDION ============================+*/
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("accordionactive");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
-
 
 
 
@@ -95,18 +78,18 @@ function topFunction() {
 
 //====================Setting minimum content height for footer =============================
 //finding content margin height because it's not included in the clientHeight
-function getMarginHeight(marginElement) {
+function getMarginHeight() {
+  const marginElement = document.getElementById("contentHeight");
   const style = getComputedStyle(marginElement);
   const marginTop = parseInt(style.marginTop, 10);
   const marginBottom = parseInt(style.marginBottom, 10);
   return marginTop + marginBottom;
 }
 
-const marginElement = document.getElementById("contentHeight");
-const marginHeight = getMarginHeight(marginElement);
-var contentHeightValue = document.body.clientHeight; //find the body height
-
 function setContentHeight() {
+  const marginHeight = getMarginHeight();
+  var contentHeightValue = document.body.clientHeight; //find the body height
+
         if (contentHeightValue < window.innerHeight) {
             var headerHeight = document.getElementById('header').clientHeight;
             var footerHeight = document.getElementById('footer').clientHeight;
@@ -123,3 +106,27 @@ else{
 
 window.addEventListener('load', setContentHeight, true);
 window.addEventListener('resize', setContentHeight, true);
+
+
+/*=============== ACCORDION ============================+*/
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("accordionactive");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+
+        getMarginHeight();
+        setContentHeight();
+
+    }
+
+  });
+
+}

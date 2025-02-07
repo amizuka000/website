@@ -473,7 +473,7 @@ nav{
 
   .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 0.8em;
+  font-size: 1em;
   color: #44495D;
   float: right;
   margin-left: 0.4em;
