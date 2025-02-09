@@ -90,7 +90,7 @@ button:hover{
 
 hr {
   height: 1px;
-  background-color: #44495D;
+  background-color: #D9D3C0;
   border: none;
 }
 
@@ -199,37 +199,36 @@ hr {
 /*========================= HEADER =============================*/
 
 header{
-  background: #891240; /*top burgundy portion*/
+  background: #891240;
   margin: 0;
   padding: 1em;
 }
 
-
-.logo h2{
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+/*
+.logo h1{
+  letter-spacing: 0em;
   text-align: center;
-  font-size: 1em;
-  font-weight: normal;
+  font-size: 3em;
+  font-weight: bold;
   margin-top: 0;
   line-height: 0;
   padding: 0;
-  color: #F0ECE2;
-}
+  color: #891240;
+}*/
 
 .logo img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding:0.5em;
   width: 30%;
-  padding: 1.5em;
 }
 
 
 /*===================== FOOTER =============================*/
 
 footer{
-  background: #891240;
+  background: #FFF/*#891240*/;
   margin: 0;
   padding: 1em;
   text-align: center;
@@ -237,7 +236,7 @@ footer{
 
 .credits p{
   font-size: 0.7em;
-  color: #F0ECE2;
+  color: #44495D/*#F0ECE2*/;
 }
 
 
@@ -663,9 +662,11 @@ height:250px;
   .artmodal-content {
     /*position: relative;*/
     /*background-color: #F0ECE2;*/
-    margin: 4em;
-    padding: 0;
-    height: auto;
+    /*margin: 4em;*/
+    /*padding: 0;*/
+    /*height: auto;*/
+
+
   }
 
   /* The Close Button */
@@ -695,12 +696,15 @@ height:250px;
     display: none;
     text-align: center;
     background-color:transparent;
+    margin: 4em;
     /*padding: 3em;*/
   }
 
   .artmySlides img{
     max-width: 100%;
+    /*Max height is vh minus the padding*/
     max-height: calc(100vh - 8em);
+    vertical-align: middle;
   }
 
   /* Next & previous buttons */

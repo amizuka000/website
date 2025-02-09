@@ -234,3 +234,13 @@
 
 
 } /*end of 500px*/
+
+
+/*720 px media query and a touch screen*/
+@media (max-width: 720px) and (pointer: coarse){
+
+  .artprev:hover,
+  .artnext:hover {
+    pointer-events: none;
+  }
+}
