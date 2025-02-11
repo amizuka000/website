@@ -394,10 +394,57 @@ nav{
     position: relative;
   }
 
+.index h1{
+  font-size: 2em;
+}
+
 
   .index p{
     text-align: center;
   }
+
+/*In Progress*/
+
+
+.drawArrowLine{
+  stroke-dasharray: 78; /*Length? Of svg? Calculated using js and console log*/
+  stroke-dashoffset: 78;
+  animation: drawArrowLine 1.5s linear infinite;
+}
+
+
+  @keyframes drawArrowLine{
+    0% {
+      stroke-dashoffset: 78; /*Starting point*/
+    }
+    33% {
+      stroke-dashoffset: 0; /*Ending point*/
+    }
+    100%{
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .drawArrowHead{
+    stroke-dasharray: 35.3; /*Length? Of svg? Calculated using js and console log*/
+    stroke-dashoffset: 35.3;
+    animation: drawArrowHead 1.5s linear infinite;
+  }
+
+  @keyframes drawArrowHead{
+    0% {
+      stroke-dashoffset: 35.3; /*Starting point*/
+    }
+    33%{
+      stroke-dashoffset: 35.3;
+    }
+    50%{
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 0; /*Ending point*/
+    }}
+
 
 
 /*========================= ABOUT ME ============================*/
