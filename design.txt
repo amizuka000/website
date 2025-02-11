@@ -3,11 +3,11 @@ This text file is information regarding the design of website & miscellaneous ot
 
 
 Color Scheme
-#44495D - dark blue/grey (text)
+#444 - dark grey (text)
 #891204 - burgundy (header, footer)
 #F0ECE2 - cream (navigation bar, accordion, everything else)
 #D9D3C0 - dark cream (accordion hover)
-#FFFFFF - white (main)
+#FFF - white (main)
 
 
 Circle Link Hover Source
