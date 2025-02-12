@@ -134,9 +134,9 @@
     width:100%;
   }
 
-  .artmySlides {
-    margin-left:10%;
-    margin-right: 10%;
+  .arthover-shadow:hover {
+    filter: none;
+    pointer-events: none;
   }
 
 /*clears the 300px height requirement*/

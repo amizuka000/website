@@ -7,11 +7,17 @@
 /*=============== GALLERY LIGHTBOX============================+*/
 // Open the Modal
 function openModal() {
+var x = window.matchMedia("(min-width: 500px)"); //media query to prevent modal on phones
+if (x.matches) { // If media query matches
   document.getElementById("artmyModal").style.display = "block";
   //previously used to hide scroll button on open modal - didn't work
   //document.getElementById("scrollButton").style.display = "none";
 
   document.body.style.overflow = 'hidden';
+  } else {
+   document.getElementById("artmyModal").style.display = "none";
+  }
+
 }
 
 // Close the Modal
