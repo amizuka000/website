@@ -134,6 +134,11 @@
     width:100%;
   }
 
+  .artmySlides {
+    margin-left:10%;
+    margin-right: 10%;
+  }
+
 /*clears the 300px height requirement*/
   .projectscolumn{
     height: auto;
