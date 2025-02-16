@@ -20,6 +20,14 @@ https://www.geeksforgeeks.org/how-to-create-typewriter-animation-using-html-and-
 Footer Height
 https://stackoverflow.com/questions/52613574/calculating-a-responsive-headers-height-and-using-the-result-in-the-style-of-an
 
+
+SVGs
+Inkscape app
+Pen tool - draw svg - path > object to path - object properties - copy code
+No fill for line-only svgs
+
+
+
 d="
 M325,18
 C228.7-8.3,118.5,8.3,78,21

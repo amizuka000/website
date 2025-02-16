@@ -30,8 +30,8 @@ function setArrowHeight() {
             var headerHeight = document.getElementById('header').clientHeight;
             var navHeight = document.getElementById('myTopnav').clientHeight;
 
-            document.getElementById("drawArrowLeft").style.top = `calc(${headerHeight}px + (${navHeight}px / 3))`;
-            document.getElementById("drawArrowRight").style.top = `calc(${headerHeight}px + (${navHeight}px / 3))`;
+            document.getElementById("drawArrowLeft").style.top = `calc(${headerHeight}px + (${navHeight}px / 4))`;
+            document.getElementById("drawArrowRight").style.top = `calc(${headerHeight}px + (${navHeight}px / 4))`;
     }
 
     window.addEventListener('load', setArrowHeight, true);
