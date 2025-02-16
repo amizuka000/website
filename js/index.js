@@ -1,4 +1,5 @@
 
+//Figuring out svg length. Unnecessary beyond initial calculation for css
 var path = document.getElementById("drawArrowLine");
 var length = path.getTotalLength();
 console.log("Line",length);
@@ -7,21 +8,24 @@ var arrowHeadPath = document.getElementById("drawArrowHead");
 var arrowHeadLength = arrowHeadPath.getTotalLength();
 console.log("Arrowhead",arrowHeadLength);
 
+
+
+//Click "Explore my portfolio!" to show the arrows
 function showArrow(){
   document.getElementById("drawArrowLeft").style.display = "block";
   document.getElementById("drawArrowRight").style.display = "block";
 
+
 }
 
+//Hides the arrows. Initially used when explore button was a hover.
 function hideArrow(){
   document.getElementById("drawArrowLeft").style.display = "none";
   document.getElementById("drawArrowRight").style.display = "none";
 }
 
 
-
-
-
+//Sets the arrows at a height within the nav bar
 function setArrowHeight() {
             var headerHeight = document.getElementById('header').clientHeight;
             var navHeight = document.getElementById('myTopnav').clientHeight;
@@ -32,8 +36,6 @@ function setArrowHeight() {
 
     window.addEventListener('load', setArrowHeight, true);
     window.addEventListener('resize', setArrowHeight, true);
-
-
 
 
 
@@ -52,6 +54,7 @@ function setArrowPosition(){
 
   document.getElementById("drawArrowLeft").style.left = `calc((${totalNavWidth}px - ${navWidth}px)/2 - 60px)`;
   document.getElementById("drawArrowRight").style.right = `calc((${totalNavWidth}px - ${navWidth}px)/2 - 60px)`;
+
 
   console.log(navWidth); // This will print the total width of all the divs
   console.log(totalNavWidth);
