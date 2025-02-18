@@ -5,11 +5,9 @@
 
 body{
   font-family: Verdana, sans-serif;
-  /*font-size: 15px;*/
   font-weight: normal;
   line-height: 1.6;
   color: #444;
-  /*letter-spacing: 0.05em;*/
   max-width: 2000px;
   margin-left:auto; /*to center the content after width=2000px*/
   margin-right: auto;
@@ -404,7 +402,25 @@ nav{
     text-align: center;
   }
 
-/*In Progress*/
+
+
+  .explorePortfolio button:hover{
+    text-decoration: none;
+    background-color: #D9D3C0;
+    cursor: default;
+  }
+
+#drawArrowLeft {
+  display: none;
+  position: absolute;
+  left: 1em;
+}
+
+#drawArrowRight {
+ display: none;
+ position: absolute;
+ right: 1em;
+}
 
 
 #drawArrowLine{
@@ -414,8 +430,6 @@ nav{
   animation-fill-mode: forwards; /* Stay on the last frame*/
   /*animation-iteration-count: 1;*/
 }
-
-
 
   @keyframes drawArrowLine{
     0% {
@@ -450,37 +464,57 @@ nav{
       stroke-dashoffset: 0; /*Ending point*/
     }}
 
- #drawArrowLeft {
-   display: none;
-   position: absolute;
-   left: 1em;
-}
-
-#drawArrowRight {
-  display: none;
-  position: absolute;
-  right: 1em;
-}
 
 
-.explorePortfolio button:hover{
-  text-decoration: none;
-  background-color: #D9D3C0;
-  cursor: default;
-}
 
-@media (max-width: 900px){
-  .explorePortfolio{
-    display: none;
+
+  .explorePortfolioMobile button:hover{
+    text-decoration: none;
+    background-color: #D9D3C0;
+    cursor: default;
   }
-}
+
+
+
+
+/*In progress*/
+
+  #drawArrowHorizontal {
+    display: none;
+    position: absolute;
+    font-size: 0; /*removes extra space for tail in y, g, etc*/
+  }
+
+  #drawArrowHeadHorizontal{
+    animation: arrowBounce 1s infinite;
+
+  }
+
+  #drawArrowLineHorizontal{
+    animation: arrowBounce 1s infinite;
+  }
+
+
+  @keyframes arrowBounce{
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+      }
+      40% {
+        transform: translateX(-15px);
+      }
+      80% {
+        transform: translateX(-5px);
+      }
+  }
+
 
 
 /*========================= ABOUT ME ============================*/
 
 
-  .aboutme img{
-    width: 75%;
+
+  .aboutme h1{
+    text-align: center;
   }
 
   /*========================= RESUME ================================*/

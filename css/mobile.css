@@ -8,6 +8,15 @@
 }
 
 
+
+/*For explorePortfolio arrows*/
+@media (max-width: 900px){
+  .explorePortfolio{
+    display: none;
+  }
+}
+
+
 @media (min-width: 720px){
 
   /*Increases margin for contact page to give it a "text message" feel even at larger screens*/
@@ -124,6 +133,15 @@
 
 /*============================500px==========================*/
 /*For when screen gets too small. 500px = When top nav bar becomes a hamburger */
+
+
+@media (min-width: 500px){
+  .explorePortfolioMobile{
+    display: none;
+  }
+}
+
+
 @media (max-width: 500px){
 
   .artcolumn img{
@@ -208,6 +226,7 @@
       float: right;
       display: block;
       font-size: 1em;
+      z-index: 999;
     }
 
     .topnav a.active {

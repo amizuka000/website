@@ -98,6 +98,8 @@
         </div>
 
 
+
+
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -111,42 +113,45 @@
   <div id="contentHeight" class = "maintext">
     <button onclick="topFunction()" id="scrollButton" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 
-
-
     <div class = "index">
 
 
-    <h1>Hi! I'm Alisa.</h1>
-    <h2>An engineer aspiring to make life a little easier to live.</h2>
+      <h1>Hi! I'm Alisa.</h1>
+      <h2>An engineer aspiring to make life a little easier to live.</h2>
 
 
 
-<div class="explorePortfolio">
-<button onmouseover="showArrow()" onmouseout="hideArrow()" >Explore my portfolio!</button>
-</div>
+      <div class="explorePortfolio">
+      <button onmouseover="showArrow()" onmouseout="hideArrow()" >Explore my portfolio!</button>
+      </div>
 
-</div><!--end of index-->
+<!--
+      <div class="explorePortfolioMobile">
+      <button onclick="showArrowHorizontal()" >Explore my portfolio!</button>
+      </div>
+-->
+
+    </div><!--end of index-->
 
 <div id="drawArrowLeft">
 
-<svg>
+  <svg>
+  <path id="drawArrowHead" fill="none" stroke="#444" stroke-width="3" d="m 37.551725,5.689654 15.931034,8.34483 -7.586208,15.55172"/>
 
-<path id="drawArrowHead" fill="none" stroke="#444" stroke-width="3" d="m 37.551725,5.689654 15.931034,8.34483 -7.586208,15.55172"/>
+  <path
+  id="drawArrowLine"
+  fill="none"
+  stroke="#444"
+  stroke-width="3"
+  d="
+  m 5.6896547,66.379304
+  c 2.908045,-14.66666 5.8160933,-29.33333 13.7185203,-38.05749 7.902428,-8.72417 20.798722,-11.50572 33.695272,-14.28733" />
+  </svg>
 
-<path
-id="drawArrowLine"
-fill="none"
-stroke="#444"
-stroke-width="3"
-d="
-m 5.6896547,66.379304
-c 2.908045,-14.66666 5.8160933,-29.33333 13.7185203,-38.05749 7.902428,-8.72417 20.798722,-11.50572 33.695272,-14.28733" />
-</svg>
-
-</div>
+</div><!--end of drawArrowLeft-->
 
 <div id="drawArrowRight">
-<svg width="100%" style="transform: scale(-1,1)">
+  <svg width="100%" style="transform: scale(-1,1)">
 
   <path id="drawArrowHead" fill="none" stroke="#444" stroke-width="3" d="m 37.551725,5.689654 15.931034,8.34483 -7.586208,15.55172"/>
 
@@ -161,48 +166,27 @@ c 2.908045,-14.66666 5.8160933,-29.33333 13.7185203,-38.05749 7.902428,-8.72417 
   </svg>
 
 
-</div><!--end of drawArrow-->
+</div><!--end of drawArrowRight-->
 
 
+<!-- IN PROGRESS
+<div id="drawArrowHorizontal">
+  <svg id="svgHorizontalArrow" >
 
+  <path id="drawArrowHeadHorizontal" fill="none" stroke="#444" stroke-width="3" d="M 30,1.5774002 43,16.5774
+l -13,15"/>
 
-
-
-
-
-
-
-
-<!--
-<div class="arrowAnimation">
-
-<svg
-width="20%"
-viewBox="0 0 200 200">
-
-<path class="drawArrowHead" fill="none" stroke="#444" stroke-width="5" d="m 102.4245,97.607688 17.21851,-14.473499 19.69651,12.915876
-"/>
-
-<path
-class="drawArrowLine"
-fill="none"
-stroke="#444"
-stroke-width="5"
-d="
-M 37.300251,163.128
-c 16.984435,4.4976 23.979263,4.53515 36.190456,1.93944 4.267912,-0.90722 8.61378,-1.79542 12.479558,-3.90461 3.865783,-2.10921 7.27809,-5.38038 8.891098,-9.54451 0.906752,-2.34084 1.219681,-4.90948 0.908122,-7.38612 -0.311533,-2.47663 -1.245962,-4.85613 -2.682724,-6.85449 -2.873522,-3.99671 -7.796705,-6.31959 -12.682014,-6.04626 -4.81884,0.2696 -9.503036,3.06254 -12.063608,7.29335 -1.280293,2.11544 -2.039914,4.55432 -2.173541,7.02169 -0.133625,2.46735 0.36043,4.9578 1.431553,7.14984 1.728264,3.53687 4.89752,6.18304 8.452068,7.73641 3.554548,1.55337 13.452452,1.67012 19.336272,0.59767 7.072379,-1.28909 12.723419,-4.78072 19.572879,-14.0553 6.54792,-8.86628 8.12702,-22.17659 8.40022,-31.03214 0.32696,-10.59807 -2.03584,-23.750209 -3.33637,-31.07316
-" />
-</svg>
-
-</div>-->
-
-
-
-<!--
-    <div class = "indexmobile">
-      <img src="img/icons/gear.png">
-    </div>
+  <path
+  id="drawArrowLineHorizontal"
+  fill="none"
+  stroke="#444"
+  stroke-width="3"
+  d="M 0,16.5774
+H 43" />
+  </svg>
+</div>
 -->
+
 
 
   </div><!--end of maintext-->

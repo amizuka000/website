@@ -61,3 +61,33 @@
 }
 
 } /*end of 500px*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function setHorizontalArrowHeight(){
+  const svgHorizontalArrow = document.getElementById('svgHorizontalArrow');
+
+  // Get the current height
+  const currentHeight = svgHorizontalArrow.getAttribute('height');
+  console.log('Current height:', currentHeight);
+
+  var navHeight = document.getElementById('myTopnav').clientHeight;
+
+  // Set a new height
+  svgHorizontalArrow.setAttribute('height', navHeight);
+}
+
+window.addEventListener('load', setHorizontalArrowHeight, true);
+window.addEventListener('resize', setHorizontalArrowHeight, true);
