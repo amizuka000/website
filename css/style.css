@@ -121,9 +121,6 @@ hr {
   overflow-wrap: break-word;
 }
 
-.thirtythreecolumn img{
-  width: 100%;
-}
 
 .fiftycolumn{
   float: left;
@@ -132,8 +129,7 @@ hr {
 }
 
 .fiftycolumn img{
-  width: 100%;
-  float: left;
+  max-width: 100%;
 }
 
 
@@ -511,11 +507,9 @@ nav{
 
 /*========================= ABOUT ME ============================*/
 
-
-
-  .aboutme h1{
-    text-align: center;
-  }
+.aboutme img{
+  float:right;
+}
 
   /*========================= RESUME ================================*/
 
