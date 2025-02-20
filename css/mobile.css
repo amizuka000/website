@@ -119,6 +119,9 @@
     padding: 1em 2em;
   }
 
+.linkbutton{
+  padding: 1em 2em;
+}
 
   #scrollButton {
     right: calc(50vw - 1.5em); /*centers*/

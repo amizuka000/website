@@ -61,7 +61,8 @@ button {
   border-radius: 2em;
   outline: none;
   transition: 0.4s;
-  font-size: 1em;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: normal;
   color: #444;
   text-decoration: none;
@@ -73,18 +74,46 @@ button {
   margin-bottom: 1em;
 }
 
-/*For button in resume, projects, things that don't need extra space above*/
-.linkbutton {
-  margin-top: 0;
-}
-
-button:hover{
+button:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
   transition: all .4s ease;
-  -webkit-transition: all .4s ease; /*safari and chrome*/
 }
+
+/*For button in resume, projects, things that don't need extra space above*/
+/*Links that look like buttons, distinguished from button for accessibility*/
+.linkbutton {
+  display: inline-block;
+  background-color: #F0ECE2;
+  padding: 1.5em 2em;
+  text-align: center;
+  border: none;
+  border-radius: 3em;
+  outline: none;
+  transition: 0.4s;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: normal;
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.linkbutton:hover, .linkbutton:hover i {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+
+
 
 hr {
   height: 1px;
@@ -143,6 +172,7 @@ hr {
 .fifteencolumn img{
   width: 70%;
   margin-top: 1em;
+  margin-bottom: 1em;
   display: block;
   margin-left: auto;
   margin-right: auto;
