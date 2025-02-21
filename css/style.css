@@ -83,7 +83,7 @@ button:hover {
 /*For button in resume, projects, things that don't need extra space above*/
 /*Links that look like buttons, distinguished from button for accessibility*/
 .linkbutton {
-  display: inline-block;
+  display: block;
   background-color: #F0ECE2;
   padding: 1.5em 2em;
   text-align: center;
@@ -103,6 +103,7 @@ button:hover {
   margin-top: 0;
   margin-bottom: 1em;
   word-break: break-all;
+  width: fit-content;
 }
 
 .linkbutton:hover, .linkbutton:hover i {
@@ -125,15 +126,9 @@ hr {
 
 .maintext{
   background-color: #fff;
-  margin: 5% 10%;
-}
-
-.centertext{
-  text-align: center;
-}
-
-.inlineblock{
-  display: inline-block;
+  padding: 5% 10%;
+  margin:0 auto; /*centers content after 1000px*/
+  max-width: 1000px; /*To prevent content from getting too wide to read*/
 }
 
 
@@ -503,11 +498,16 @@ nav{
 
 /*========================= ABOUT ME ============================*/
 
+.aboutme h1{
+  margin: 0;
+}
+
 .aboutme img{
   float:right;
 }
 
   /*========================= RESUME ================================*/
+
 
   /* Style the buttons that are used to open and close the accordion panel */
   .accordion {
@@ -593,6 +593,7 @@ nav{
     text-transform: uppercase;
     letter-spacing: 0.05em;
     text-decoration: none;
+    text-align: center;
   }
 
   .projectscolumn img, .projectscolumn iframe{
@@ -616,7 +617,6 @@ nav{
 /*========== PROJECTS - INDIVIDUAL PROJECT PAGES======================*/
 
 .projectsindividual {
-  max-width: 1000px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -780,18 +780,6 @@ nav{
     filter: brightness(1.9);
   }
 
-  /* REMOVED - Number text (1/3 etc) */
-  /*
-  .artnumbertext {
-    display:none;
-    color: #444;
-    font-size: 1em;
-    position: absolute;
-    bottom: 0;
-    left:0;
-    right:0;
-  }
-*/
 
   /* REMOVED - Caption text */
   /*
@@ -833,7 +821,7 @@ nav{
   .triangle-isosceles-left:after{
     content:"";
     position:absolute;
-    bottom:-15px; /* value = - border-top-width - border-bottom-width */
+    bottom:-13px; /* value = - border-top-width - border-bottom-width */
     left:15%; /* controls horizontal position */
     border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
     border-style:solid;
@@ -859,7 +847,7 @@ nav{
   .triangle-isosceles-right:after{
     content:"";
     position:absolute;
-    bottom:-15px; /* value = - border-top-width - border-bottom-width */
+    bottom:-13px; /* value = - border-top-width - border-bottom-width */
     left:75%; /* controls horizontal position */
     border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
     border-style:solid;
