@@ -6,7 +6,6 @@ Color Scheme
 #444 - dark grey (text)
 #891204 - burgundy (header, footer)
 #F0ECE2 - cream (navigation bar, accordion, everything else)
-#D9D3C0 - dark cream (accordion hover)
 #FFF - white (main)
 
 
