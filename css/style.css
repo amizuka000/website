@@ -103,6 +103,7 @@ button:hover {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 1em;
+  word-break: break-all;
 }
 
 .linkbutton:hover, .linkbutton:hover i {
@@ -630,10 +631,6 @@ nav{
   clear: both;
 }
 
-.projectsrow a{
-  padding:0;
-  margin:0;
-}
 
 /* Create four equal columns that floats next to eachother */
 .projectsrow{
@@ -648,22 +645,24 @@ nav{
     height: 300px;
     margin-bottom: 3.5%;
     background-color: #F0ECE2;
+    box-sizing: border-box;
+    padding: 1em;
   }
 
   .projectscolumn img, .projectscolumn iframe{
-    width: calc(100% - 2em);
+    width: 100%;
     height: calc(200px - 1em);
     object-fit: scale-down;
     background-color: #FFF;
     box-sizing: border-box;
-    margin-top: 1em;
-    margin-bottom: 1em;
     padding: 1em;
+    margin-bottom: 1em;
   }
 
 
 .projectscolumn a{
   text-transform: uppercase;
+  letter-spacing: 0.05em;
   text-decoration: none;
 }
 
