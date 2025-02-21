@@ -117,7 +117,8 @@ button:hover {
 
 hr {
   height: 1px;
-  background-color: #D9D3C0;
+  background-color: #F0ECE2;
+  filter: brightness(0.9);
   border: none;
 }
 
@@ -432,7 +433,7 @@ nav{
 
   .explorePortfolio button:hover{
     text-decoration: none;
-    background-color: #D9D3C0;
+    filter: brightness(0.9);
     cursor: default;
   }
 
@@ -496,7 +497,7 @@ nav{
 
   .explorePortfolioMobile button:hover{
     text-decoration: none;
-    background-color: #D9D3C0;
+    filter: brightness(0.9);
     cursor: default;
   }
 
@@ -580,7 +581,7 @@ nav{
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .accordionactive, .accordion:hover {
-    background-color: #D9D3C0;
+    filter: brightness(0.9);
     text-decoration: none;
   }
 
@@ -634,10 +635,7 @@ nav{
   margin:0;
 }
 
-
-
 /* Create four equal columns that floats next to eachother */
-
 .projectsrow{
   display: flex;
   justify-content: center;
@@ -649,51 +647,30 @@ nav{
     width: 300px;/*33.33%*/
     height: 300px;
     margin-bottom: 3.5%;
+    background-color: #F0ECE2;
   }
 
   .projectscolumn img, .projectscolumn iframe{
-    width: calc(100% - 1em);
-    height: 200px;
+    width: calc(100% - 2em);
+    height: calc(200px - 1em);
     object-fit: scale-down;
-    border-style: solid;
-    border-color: #F0ECE2;
-    border-width: 0.5em;
+    background-color: #FFF;
+    box-sizing: border-box;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
   }
 
 
-
-
-/*
-.projectscolumn {
-  display: inline-block;
-  vertical-align: top;
-  height: 300px;
-  width: 300px;
-  background-color: #F0ECE2;
-  overflow: auto;
-  overflow-wrap: break-word;
-  margin-bottom: 7%;
+.projectscolumn a{
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .projectscolumn:hover{
-  background-color: #D9D3C0;
+  filter: brightness(0.9);
   transition: 0.4s;
 }
-
-.projectscolumn img, .projectscolumn iframe{
-  width: 80%;
-  height: 200px;
-  background-color: white;
-  object-fit: scale-down;
-}
-
-*/
-
-.projectscolumn a{
-  text-transform: uppercase;
-}
-
-
 
 
 /*========== PROJECTS - INDIVIDUAL PROJECT PAGES======================*/
@@ -872,7 +849,7 @@ height:250px;
 
   .artprev:hover,
   .artnext:hover {
-    color: #D9D3C0;
+    filter: brightness(0.9);
     text-decoration: none;
   }
 
