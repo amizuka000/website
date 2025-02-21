@@ -625,12 +625,6 @@ nav{
 
 /*========================== PROJECTS ===================================*/
 
-.projectsrow:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 
 /* Create four equal columns that floats next to eachother */
 .projectsrow{
@@ -674,6 +668,11 @@ nav{
 
 /*========== PROJECTS - INDIVIDUAL PROJECT PAGES======================*/
 
+.projectsindividual {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .projectsindividual h1{
   text-transform: uppercase;
@@ -681,39 +680,23 @@ nav{
   font-size: 1.5rem;
   font-weight: bold;
   overflow-wrap: break-word;
+  text-align: center;
 }
 
 .projectsindividual h2{
   text-transform: uppercase;
-  /*text-decoration: underline;*/
   letter-spacing: 0.05em;
   font-size: 1rem;
   font-weight: bold;
   overflow-wrap: break-word;
 }
 
-
-.projectsindividual .sixtycolumn{
-  padding-right: 2%;
-}
-
-.projectsindividualoneimg img{
+.projectsindividual img{
+  display: inline-block;
   max-width: 100%;
-width: auto;
-height:250px;
+  max-height: 200px;
 }
 
-.projectsindividualthreeimg img{
-max-width:30%;
-width: auto;
-height:250px;
-}
-
-.projectsindividualtwoimg img{
-  max-width:45%;
-  width: auto;
-  height:250px;
-}
 
 .sidebar {
   border-left-style: solid;
@@ -728,13 +711,6 @@ height:250px;
 
 
   /*============================= ART ===========================*/
-
-/*
-  .artrow:after {
-    content: "";
-    display: table;
-    clear: both;
-  }*/
 
 .artrow{
   display: flex;
@@ -767,15 +743,16 @@ height:250px;
   }
 
 
-  /* Modal Content */
+  /* REMOVED - Modal Content */
+  /*
   .artmodal-content {
-    /*position: relative;*/
-    /*background-color: #F0ECE2;*/
-    /*margin: 4em;*/
-    /*padding: 0;*/
-    /*height: auto;*/
-
+    position: relative;
+    background-color: #F0ECE2;
+    margin: 4em;
+    padding: 0;
+    height: auto;
   }
+  */
 
   /* The Close Button */
   .artclose {
@@ -794,9 +771,10 @@ height:250px;
 
   .artclose:hover,
   .artclose:focus {
-    color: #999;
+    filter: brightness(1.9);
     text-decoration: none;
     cursor: pointer;
+    transition: 0.4s;
   }
 
   /* Hide the slides by default */
@@ -848,13 +826,14 @@ height:250px;
 
   .artprev:hover,
   .artnext:hover {
-    filter: brightness(0.9);
     text-decoration: none;
+    filter: brightness(1.9);
   }
 
-  /* Number text (1/3 etc) */
+  /* REMOVED - Number text (1/3 etc) */
+  /*
   .artnumbertext {
-    display:none;/*decided to get rid of the number texts*/
+    display:none;
     color: #444;
     font-size: 1em;
     position: absolute;
@@ -862,9 +841,9 @@ height:250px;
     left:0;
     right:0;
   }
+*/
 
-
-  /* Caption text - REMOVED*/
+  /* REMOVED - Caption text */
   /*
   .artcaption-container {
     text-align: center;

@@ -80,6 +80,10 @@
     display: block;
   }
 
+  .projectsindividual {
+    width: 100%;
+  }
+
 
   .gallery img{
     padding: 0.5em;
