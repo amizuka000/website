@@ -13,7 +13,6 @@ body{
   margin-right: auto;
   margin-top:0;
   margin-bottom:0;
-
 }
 
 
@@ -221,7 +220,6 @@ header{
 /*===================== FOOTER =============================*/
 
 footer{
-  background: #FFF/*#891240*/;
   margin: 0;
   padding: 1em;
   text-align: center;
@@ -229,7 +227,6 @@ footer{
 
 .credits p{
   font-size: 0.7em;
-  color: #444/*#F0ECE2*/;
 }
 
 
@@ -253,7 +250,6 @@ nav{
 .topnav a{
   font-size: 1em;
   font-weight: normal;
-  color: #444;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -513,20 +509,6 @@ nav{
 
   /*========================= RESUME ================================*/
 
-  .resume{
-    width: 70%;
-    height: 500px;
-    border-style: solid;
-    border-color: #444;
-    border-width: 3px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
-    margin-bottom: 3em;
-  }
-
-
   /* Style the buttons that are used to open and close the accordion panel */
   .accordion {
     background-color: #F0ECE2;
@@ -540,7 +522,6 @@ nav{
     transition: 0.4s;
     font-size: 1em;
     font-weight: normal;
-    color: #444;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -574,7 +555,6 @@ nav{
   .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 1em;
-  color: #444;
   float: right;
   margin-left: 0.4em;
   overflow: visible;
@@ -842,7 +822,6 @@ nav{
     position:relative;
     padding:1em;
     margin:1em 0 2em;
-    color:#444;
     background:#F0ECE2;
     border-radius:1.5em;
     text-align: center;
@@ -870,7 +849,6 @@ nav{
     position:relative;
     padding:1em;
     margin:1em 0 2em;
-    color:#444;
     background:#F0ECE2;
     border-radius:1.5em;
     text-align: center;
@@ -892,22 +870,18 @@ nav{
   }
 
   .contact-left h2{
-    font-family: Verdana, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
     line-height: 0.5;
-    color: #444;
     margin: 0;
     text-align: left;
   }
 
 
   .contact-right h2{
-    font-family: Verdana, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
     line-height: 0.5;
-    color: #444;
     margin: 0;
     text-align: right;
   }
@@ -922,8 +896,6 @@ nav{
     max-width: calc(100%-10em);
     padding: 1em;
     margin: auto;
-    color:#444;
-    background:#FFFFFF;
     border-color:#F0ECE2;
     border-width: 3px;
     border-style: solid;
@@ -938,7 +910,6 @@ nav{
     flex: auto;
     margin-left: auto;
     margin-right: auto;
-    color:#444;
     overflow-wrap: break-word;
 
   }
