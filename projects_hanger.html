@@ -149,12 +149,12 @@ We chose to do a plastic hanger because they frequently break.</p>
 
 <!-- PREDICTIONS-->
 <h2>Prediction</h2>
-<p>
-  Predicted that the maximum stress will occur at the sharp intersections of the hook
-  and the body because sharp corners are stress concentrations.
-</p>
-<br>
-<img src="img/projects/hanger/hangerprediction.png" alt="Prediction of hanger failure">
+  <p>
+    Predicted that the maximum stress will occur at the sharp intersections of the hook
+    and the body because sharp corners are stress concentrations.
+  </p>
+  <br>
+  <img src="img/projects/hanger/hangerprediction.png" alt="Prediction of hanger failure">
 <!-- PREDICTIONS END-->
 
 <br>
@@ -162,385 +162,255 @@ We chose to do a plastic hanger because they frequently break.</p>
 
 <!-- SOLID MODEL-->
 <h2>Solid Model</h2>
-<p>We defeatured the small hooks because we concluded that their impact is negligible when a hanger is under the loading of a jacket.
-</p>
-<br>
+  <p>We defeatured the small hooks because we concluded that their impact is negligible when a hanger is under the loading of a jacket.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangermodelreal.png" alt="Hanger model and real object">
-
+  <img src="img/projects/hanger/hangermodelreal.png" alt="Hanger model and real object">
 <!-- SOLID MODEL END-->
 
 <br>
 
-
-
 <!-- INITIAL BOUNDARY CONDITIONS-->
 <h2>Initial Boundary Conditions</h2>
-<p>Initially, we thought that the hanger would experience equal load on both shoulders,
-  with a reaction force at the tangent point where the hanger hook meets the clothes rack.
-</p>
-<br>
+  <p>Initially, we thought that the hanger would experience equal load on both shoulders,
+    with a reaction force at the tangent point where the hanger hook meets the clothes rack.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerevenloadfbd.png" alt="Hanger Initial FBD">
-
+  <img src="img/projects/hanger/hangerevenloadfbd.png" alt="Hanger Initial FBD">
 <!-- INITIAL BOUNDARY CONDITIONS END-->
 
 <br>
 
-
-
-
 <!-- EXPERIMENT-->
 <h2>Experiment</h2>
-<p>In order to verify our finite element analysis, we conducted experiments by placing a jacket with weights stuffed
-   in the pockets, and increasing the weights until the hanger broke.
-</p>
-<br>
+  <p>In order to verify our finite element analysis, we conducted experiments by placing a jacket with weights stuffed
+     in the pockets, and increasing the weights until the hanger broke.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerjacketfracture.png" alt="Jacket on hanger and fracture">
-
+  <img src="img/projects/hanger/hangerjacketfracture.png" alt="Jacket on hanger and fracture">
 <!-- EXPERIMENT END-->
 
 <br>
 
-
-
-
-
 <!-- INITIAL SIMULATION-->
 <h2>Initial Simulation</h2>
-<p>Using the initial boundary conditions, the result of the FEA was as shown below.
-</p>
-<br>
+  <p>Using the initial boundary conditions, the result of the FEA was as shown below.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerinitialresult.png" alt="Initial FEA result">
-
+  <img src="img/projects/hanger/hangerinitialresult.png" alt="Initial FEA result">
 <!-- INITIAL SIMULATION END-->
 
 <br>
 
-
-
-
-
 <!-- EXPERIMENT VS SIMULATION-->
 <h2>Experiment vs Simulation</h2>
-<p>After comparing the simulation results to the experimental results,
-  we noticed that the location of fracture as observed experimentally
-  did not match the location of maximum stress observed by simulation.
-</p>
-<br>
+  <p>After comparing the simulation results to the experimental results,
+    we noticed that the location of fracture as observed experimentally
+    did not match the location of maximum stress observed by simulation.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerdoesnotmatch.png" alt="Simulation does not match the experiment">
-
+  <img src="img/projects/hanger/hangerdoesnotmatch.png" alt="Simulation does not match the experiment">
 <!-- EXPERIMENT VS SIMULATION END-->
 
 <br>
 
-
-
-
 <!-- REVISITED BOUNDARY CONDITIONS-->
 <h2>Revisited Boundary Conditions</h2>
-<p>Since the simulation and experiment did not agree, we revisited the boundary conditions and
-  noticed that as humans, we tend to hang jackets unevenly on a hanger in order to balance the hanger
-   which has a naturally uneven shape with its opening on the hook.
-</p>
-<br>
+  <p>Since the simulation and experiment did not agree, we revisited the boundary conditions and
+    noticed that as humans, we tend to hang jackets unevenly on a hanger in order to balance the hanger
+     which has a naturally uneven shape with its opening on the hook.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerrevisedbc.png" alt="Revised hanger boundary condition">
-
+  <img src="img/projects/hanger/hangerrevisedbc.png" alt="Revised hanger boundary condition">
 <!-- REVISITED BOUNDARY CONDITIONS END-->
 
 <br>
 
-
-
-
 <!-- REVISED SIMULATION-->
 <h2>Revised Simulation</h2>
-<p>The simulation was re-ran with an uneven loading on the two shoulders of the hanger.
-</p>
-<br>
+  <p>The simulation was re-ran with an uneven loading on the two shoulders of the hanger.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerrevisedresult.png" alt="Revised hanger simulation">
-
+  <img src="img/projects/hanger/hangerrevisedresult.png" alt="Revised hanger simulation">
 <!-- REVISED SIMULATION END-->
 
 <br>
 
-
-
-
 <!-- EXPERIMENT VS SIMULATION AGAIN-->
 <h2>Experiment vs Simulation, Again</h2>
-<p>The simulation results were compared to the experiment result.
-  This time, the location of maximum stress determined in the FEA corresponded to the location of fracture in the experiment.
-</p>
-<br>
+  <p>The simulation results were compared to the experiment result.
+    This time, the location of maximum stress determined in the FEA corresponded to the location of fracture in the experiment.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangermatches.png" alt="Simulation and experiment matches">
-
+  <img src="img/projects/hanger/hangermatches.png" alt="Simulation and experiment matches">
 <!-- EXPERIMENT VS SIMULATION AGAIN END-->
 
 <br>
 
-
-
-
 <!-- RESULT VALIDATION-->
 <h2>Result Validation</h2>
-<p>Our simulation results then had to be validated using the table below.
-</p>
-<br>
+  <p>Our simulation results then had to be validated using the table below.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerevaluation.png" alt="Result Evaluation Table">
-
+  <img src="img/projects/hanger/hangerevaluation.png" alt="Result Evaluation Table">
 <!-- RESULT VALIDATION END-->
 
 <br>
 
-
-
-
-
 <!-- MODEL VALIDATION-->
 <h2>Model Validation</h2>
-<p>The model was first validated by comparing the FEA displacement to the experiment displacement.
-</p>
-<p>
-  Displacement of real-life and FEA match, validating the model.
-</p>
-<br>
+  <p>The model was first validated by comparing the FEA displacement to the experiment displacement.
+  </p>
+  <p>
+    Displacement of real-life and FEA match, validating the model.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerdisplacement.png" alt="Displacement Evaluation">
-
+  <img src="img/projects/hanger/hangerdisplacement.png" alt="Displacement Evaluation">
 <!-- MODEL VALIDATION END-->
 
 <br>
 
-
-
-
-
-
-
-
-
 <!-- SOLUTION VALIDATION-->
 <h2>Solution Validation</h2>
-<p>Divergence when decreasing element size at stress concentrations.
-</p>
-<br>
+  <p>Divergence when decreasing element size at stress concentrations.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerdivergence.png" alt="Hanger solution diverges">
+  <img src="img/projects/hanger/hangerdivergence.png" alt="Hanger solution diverges">
 
-<br>
-<br>
-<p>
-  Therefore, the solution is invalid. Any adjustments hereon will not be strongly reflective of the real-life scenario.
-</p>
-
+  <br>
+  <br>
+  <p>
+    Therefore, the solution is invalid. Any adjustments hereon will not be strongly reflective of the real-life scenario.
+  </p>
 <!-- RESULT VALIDATION END-->
 
 <br>
 
-
-
-
-
-
-
-
-
-
 <!-- GEOMETRY ADJUSTMENT-->
 <h2>Geometry Adjustment</h2>
-<p>We added fillets to the location of stress singularities.
-</p>
-<br>
+  <p>We added fillets to the location of stress singularities.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerfillets.png" alt="Added fillets to the hanger model">
-
-
+  <img src="img/projects/hanger/hangerfillets.png" alt="Added fillets to the hanger model">
 <!-- GEOMETRY ADJUSTMENT END-->
 
 <br>
 
-
-
-
-
-
-
-
 <!-- SOLUTION VALIDATION AGAIN-->
 <h2>Solution Validation Again</h2>
-<p>This time, the solution was validated by the convergence test.
-</p>
-<br>
+  <p>This time, the solution was validated by the convergence test.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerconvergence.png" alt="Solution validated by convergence test">
+  <img src="img/projects/hanger/hangerconvergence.png" alt="Solution validated by convergence test">
 
-<br><br>
-<p>Additionally, the solution was also validated by the sensitivity test.
-</p>
-<br>
+  <br><br>
+  <p>Additionally, the solution was also validated by the sensitivity test.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangersensitivity.png" alt="Solution validated by sensitivity test">
-
-
+  <img src="img/projects/hanger/hangersensitivity.png" alt="Solution validated by sensitivity test">
 <!-- SOLUTION VALIDATION AGAIN END-->
 
 <br>
 
-
-
-
-
-
-
-
-
 <!-- DESIGN VALIDATION-->
 <h2>Design Validation</h2>
-<p>To validate our design, we looked at the properties of our hanger. </p>
-<p>
-  The maximum stress fracture theory states that the maximum principal stress must be greater than the fracture strength,
-  or 35 MPa for polystyrene. </p>
+  <p>To validate our design, we looked at the properties of our hanger. </p>
   <p>
-    Since SolidWorks is a linear solver, used the result of our experiment and scaled the SolidWorks result accordingly
-    by adjusting the fillet size of the FEA until the fracture strength was obtained.
-</p>
-<br>
+    The maximum stress fracture theory states that the maximum principal stress must be greater than the fracture strength,
+    or 35 MPa for polystyrene. </p>
+    <p>
+      Since SolidWorks is a linear solver, used the result of our experiment and scaled the SolidWorks result accordingly
+      by adjusting the fillet size of the FEA until the fracture strength was obtained.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerscaling.png" alt="Design validation of hanger">
+  <img src="img/projects/hanger/hangerscaling.png" alt="Design validation of hanger">
 
-<br><br>
-<p>According to the sensitivity test, however, the fillet radius must be unrealistically large for the stress to reach the fracture strength.
-</p>
-<br>
+  <br><br>
+  <p>According to the sensitivity test, however, the fillet radius must be unrealistically large for the stress to reach the fracture strength.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangersensitivityscaling.png" alt="Hanger sensitivity scaling">
+  <img src="img/projects/hanger/hangersensitivityscaling.png" alt="Hanger sensitivity scaling">
 
+  <br><br>
+  <p>Therefore, we concluded that our results are difficult to validate.
+  </p>
+  <br>
 
-
-<br><br>
-<p>Therefore, we concluded that our results are difficult to validate.
-</p>
-<br>
-
-<img src="img/projects/hanger/hangerresultinvalid.png" alt="Hanger result invalid">
-
-
+  <img src="img/projects/hanger/hangerresultinvalid.png" alt="Hanger result invalid">
 <!--  DESIGN VALIDATION END-->
 
 <br>
 
-
-
-
-
-
-
-
 <!-- DESIGN IMPLICATION-->
 <h2>Design Implication</h2>
-<p>We were still able to make design conclusions using FEA as the model and solution were validated.
-</p>
-<br>
+  <p>We were still able to make design conclusions using FEA as the model and solution were validated.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerdesign.png" alt="Hanger design questions">
-
-
+  <img src="img/projects/hanger/hangerdesign.png" alt="Hanger design questions">
 <!-- DESIGN IMPLICATION END-->
 
 <br>
 
-
-
-
-
-
-
-
-
-
 <!-- WHY IS THE BOTTOM OF THE HOOK CURVED?-->
 <h2>Why is the bottom of the hook curved?</h2>
-<p>We ran an FEA on the hanger without a hook and found that the stress is higher without the hook.
-  Therefore, the hook may be curved at the bottom to reduce the stress.
-</p>
-<br>
+  <p>We ran an FEA on the hanger without a hook and found that the stress is higher without the hook.
+    Therefore, the hook may be curved at the bottom to reduce the stress.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerbottomhook.png" alt="Hanger bottom hook FEA">
-
-
+  <img src="img/projects/hanger/hangerbottomhook.png" alt="Hanger bottom hook FEA">
 <!-- WHY IS THE BOTTOM OF THE HOOK CURVED? END-->
 
 <br>
 
-
-
-
-
-
-
-
-
 <!-- WHY IS THE CROSS-SECTION ROUND?-->
 <h2>Why is the cross-section round?</h2>
-<p>We ran an FEA on the hanger with a square cross-section and noticed that the stress is actually lower with a square-cross section.
-  Therefore, stress cannot be the reason why the cross-section is round. Maybe a circular profile is easier to remove out of the injection mold case?
-</p>
-<br>
+  <p>We ran an FEA on the hanger with a square cross-section and noticed that the stress is actually lower with a square-cross section.
+    Therefore, stress cannot be the reason why the cross-section is round. Maybe a circular profile is easier to remove out of the injection mold case?
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangercrosssection.png" alt="Hanger cross section FEA">
-
-
+  <img src="img/projects/hanger/hangercrosssection.png" alt="Hanger cross section FEA">
 <!-- WHY IS THE CROSS-SECTION ROUND? END-->
 
 <br>
 
-
-
-
-
-
-
-
 <!-- WHY ARE THE SIDES CURVED?-->
 <h2>Why are the sides curved?</h2>
-<p>From our FEA studies, we learned that sharp corners lead to high stresses. Therefore, sharp corners should be avoided.
-</p>
-<br>
+  <p>From our FEA studies, we learned that sharp corners lead to high stresses. Therefore, sharp corners should be avoided.
+  </p>
+  <br>
 
-<img src="img/projects/hanger/hangerdesignchange.png" alt="Hanger design change">
-
-
+  <img src="img/projects/hanger/hangerdesignchange.png" alt="Hanger design change">
 <!-- WHY ARE THE SIDES CURVED? END-->
 
 <br>
 
-
-
-
-
-
-
-
-
-  <!-- CONCLUSION-->
+<!-- CONCLUSION-->
 <h2>Conclusion</h2>
-<p>Experiments have shown that the hanger can withstand up to 6.1 kg, or about 3 really heavy jackets,
-  before the hanger breaks. This is more than enough for a cheap hanger to hold!
-</p>
-
+  <p>Experiments have shown that the hanger can withstand up to 6.1 kg, or about 3 really heavy jackets,
+    before the hanger breaks. This is more than enough for a cheap hanger to hold!
+  </p>
 <!-- CONCLUSION END-->
 
-
-
-
+<br><br>
 
 
 </div><!--end of projectsindividual-->

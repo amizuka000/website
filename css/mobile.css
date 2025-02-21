@@ -84,6 +84,14 @@
     width: 100%;
   }
 
+.projectsindividual h2{
+  text-align: center;
+}
+
+.projectsindividual img{
+  max-height: 200px;
+}
+
 
   .gallery img{
     padding: 0.5em;
