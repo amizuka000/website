@@ -12,7 +12,7 @@
 
   <!-- CSS-->
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/test.css" rel="stylesheet">
+  <link href="css/test-mobile.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/06c53d9aba.js" crossorigin="anonymous"></script>
 
   <!-- Fav and touch icons -->
@@ -44,19 +44,22 @@
 
   <header id="header"> <!--begin header-->
 
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
 
     <div class = "logo">
       <a href="index.html"><img src="img/name.png" alt="Alisa Mizukami"></a>
-      <!--<h2>B.E., Mechanical Engineering</h2>-->
     </div> <!-- div end logo-->
-
 
   </header> <!-- end header-->
 
   <nav> <!--navigation begins-->
 
 <div class="topnav" id="myTopnav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<div class="sidenav">
+
         <div class="circle">
           <a href="aboutme.html">About Me</a>
           <svg viewBox="0 0 500 155" preserveAspectRatio="none">
@@ -97,9 +100,7 @@
         </div>
 
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+</div> <!--end of sidenav-->
 
 
     </div><!--topnav ends-->

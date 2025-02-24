@@ -1,5 +1,6 @@
 
 //Figuring out svg length. Unnecessary beyond initial calculation for css
+
 var path = document.getElementById("drawArrowLine");
 var length = path.getTotalLength();
 console.log("Line",length);
@@ -7,6 +8,11 @@ console.log("Line",length);
 var arrowHeadPath = document.getElementById("drawArrowHead");
 var arrowHeadLength = arrowHeadPath.getTotalLength();
 console.log("Arrowhead",arrowHeadLength);
+
+
+
+
+
 
 /* IN PROGRESS
 var pathHeadHorizontal = document.getElementById("drawArrowHeadHorizontal");
