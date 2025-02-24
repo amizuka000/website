@@ -270,11 +270,14 @@
      text-decoration: none;
      z-index: 999;
      padding-left: 1em;
+     padding-right: 1em;
    }
 
 .icon:hover{
   text-decoration: none;
 }
+
+
 
   /*HAMBURGER*/
     /* When the screen is less than 500 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -286,6 +289,7 @@
   .topnav a{
     display: none;
   }
+
 
 
   .topnav div{
@@ -303,6 +307,9 @@
     height: 100%;
     top: 0;
     z-index: 999;
+    left: -70%;
+    transform: translatex(99%);
+    transition: 0.2s;
     }
 
 
@@ -310,7 +317,6 @@
     display: block;
     text-align: left;
     padding: 0.5em 2em;
-
   }
 
   .topnav.responsive .circle{
@@ -320,22 +326,26 @@
     animation: 0.4s ;
   }
 
-
-
-
   .topnav.responsive .closebtn {
     display: inline-block;
     position: relative;
     float: right;
-    height: 3em;
-    width: 3em;
     text-align: center;
+   height: 3.5em;
   }
 
 
+  .topnav.responsive .closebtn i{
+  display: flex;
+     height: 100%;
+     justify-content: center;
+     align-items: center;
+   }
 
 
-
+@keyframes navSlide{
+    transform: translatex(0%);
+}
 
 
 
