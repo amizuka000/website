@@ -163,6 +163,10 @@
     padding: 10%;
   }
 
+  .explorePortfolioMobile{
+    display: block;
+  }
+
 
   .artcolumn img{
     height: auto;
