@@ -6,22 +6,6 @@
 
 
 
-/*=============== MOBILE NAVIGATION ============================+*/
-
-
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-
-
-
 
 //=======================Scroll to topnav==============================
 // Get the button:
@@ -91,7 +75,9 @@ function getMarginHeight() {
 function setContentHeight() {
   const marginHeight = getMarginHeight();
   var contentHeightValue = document.body.clientHeight; //find the body height
-        if (contentHeightValue < window.innerHeight) {
+
+      //For non-mobile versions with a nav bar
+        if (contentHeightValue < window.innerHeight && window.innerWidth > 500) {
             var headerHeight = document.getElementById('header').clientHeight;
             var footerHeight = document.getElementById('footer').clientHeight;
             var navHeight = document.getElementById('myTopnav').clientHeight;
@@ -99,11 +85,22 @@ function setContentHeight() {
 
             document.getElementById("contentHeight").style.height = `calc(${windowHeight}px -  ${headerHeight}px - ${footerHeight}px - ${navHeight}px - ${marginHeight}px)`;
        }
-else{
-            document.getElementById("contentHeight").style.height = "";
+
+       //For mobile versions without the nav bar
+        else if (contentHeightValue < window.innerHeight && window.innerWidth < 500)  {
+          var headerHeight = document.getElementById('header').clientHeight;
+          var footerHeight = document.getElementById('footer').clientHeight;
+          const windowHeight = window.innerHeight;
+
+          document.getElementById("contentHeight").style.height = `calc(${windowHeight}px -  ${headerHeight}px - ${footerHeight}px - ${marginHeight}px)`;
         }
-        //document.getElementById("contentHeight").style.top = `${headerHeight}px`;
-    }
+
+
+          else{
+            document.getElementById("contentHeight").style.height = "";
+                  }
+                  //document.getElementById("contentHeight").style.top = `${headerHeight}px`;
+              }
 
     window.addEventListener('load', setContentHeight, true);
     window.addEventListener('resize', setContentHeight, true);
@@ -131,3 +128,17 @@ function sizeAccordion(){
 
 window.addEventListener('load', sizeAccordion, true);
 window.addEventListener('resize', sizeAccordion, true);
+
+
+
+function openNav() {
+  var x = document.getElementById("myTopnav");
+    document.body.style.overflow = 'hidden';
+    x.style.width = "70%";
+}
+
+function closeNav(){
+  var x = document.getElementById("myTopnav");
+    document.body.style.overflow = 'auto';
+    x.style.width = "0";
+}
