@@ -159,6 +159,9 @@
 
 @media (max-width: 500px){
 
+  .maintext {
+    padding: 10%;
+  }
 
 
   .artcolumn img{
@@ -300,7 +303,7 @@
     display: block;
     text-align: left;
     padding: 0.5em 2em;
-    white-space: nowrap; 
+    white-space: nowrap;
   }
 
   .topnav .circle{
