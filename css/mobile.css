@@ -301,8 +301,9 @@
   .topnav a {
     display: block;
     text-align: left;
-    padding: 0.5em 2em;
+    padding: 1em 2em;
     white-space: nowrap;
+    font-size: 1em;
   }
 
   .topnav .circle{
@@ -316,7 +317,7 @@
     position: relative;
     float: right;
     text-align: center;
-   height: 3.5em;
+   height: 2em; /*calculated from .topnav a padding*/
   }
 
 

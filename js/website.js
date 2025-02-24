@@ -144,3 +144,58 @@ function closeNav(){
     document.getElementById("contentHeight").style.filter = 'brightness(1)';
     x.style.width = "0";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//window refresh
+var initialViewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+// portrait mobile viewport initial, any change refresh
+if (initialViewportWidth < 500) {
+ 		 window.addEventListener('resize', function () {
+				newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
+				if (newViewportWidth > 499) {
+					location.reload();
+					}
+			});
+}
+
+// landscape mobile viewport initial, any change refresh
+else if (initialViewportWidth > 499 && initialViewportWidth < 720) {
+    window.addEventListener('resize', function () {
+				newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
+				if (newViewportWidth < 500 || newViewportWidth > 719) {
+					location.reload();
+					}
+			});
+}
+
+// tablet viewport initial, any change refresh
+else if (initialViewportWidth > 719 && initialViewportWidth < 1000)  {
+      window.addEventListener('resize', function () {
+				newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
+				if (newViewportWidth < 720 || newViewportWidth > 999) {
+					location.reload();
+					}
+			});
+}
+
+// web viewport initial, any change refresh
+else if (initialViewportWidth > 999) {
+        window.addEventListener('resize', function () {
+				newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
+				if (newViewportWidth < 1000) {
+					location.reload();
+					}
+			});
+}
