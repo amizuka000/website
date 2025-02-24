@@ -134,11 +134,13 @@ window.addEventListener('resize', sizeAccordion, true);
 function openNav() {
   var x = document.getElementById("myTopnav");
     document.body.style.overflow = 'hidden';
+    document.getElementById("contentHeight").style.filter = 'brightness(0.5)';
     x.style.width = "70%";
 }
 
 function closeNav(){
   var x = document.getElementById("myTopnav");
     document.body.style.overflow = 'auto';
+    document.getElementById("contentHeight").style.filter = 'brightness(1)';
     x.style.width = "0";
 }

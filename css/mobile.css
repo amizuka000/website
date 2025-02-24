@@ -205,9 +205,6 @@
     width: 75%;
   }
 
-
-
-
   .artnumbertext {
     display: none;
   }
@@ -280,7 +277,9 @@
   text-decoration: none;
 }
 
-
+#contentHeight{
+  transition: 0.4s;
+}
 
   /*HAMBURGER*/
     /* When the screen is less than 500 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -294,7 +293,7 @@
   left: 0;
   background-color: #F0ECE2;
   overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
   padding: 0;
   }
 
@@ -327,12 +326,6 @@
      justify-content: center;
      align-items: center;
    }
-
-
-@keyframes navSlide{
-    transform: translatex(0%);
-}
-
 
 
 
