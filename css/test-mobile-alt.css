@@ -297,12 +297,12 @@
       }
 
 
-  .topnav.responsive {
+  .topnav.responsive .sidenav{
     position: fixed;
     width: 70%;
     height: 100%;
     top: 0;
-    z-index: 999;
+    transition: 0.4s;
     }
 
 
@@ -313,7 +313,7 @@
 
   }
 
-  .topnav.responsive .circle{
+  .topnav.responsive .sidenav .circle{
     display: inline-block;
     width: 100%;
     position: relative;
@@ -323,7 +323,7 @@
 
 
 
-  .topnav.responsive .closebtn {
+  .topnav.responsive .sidenav .closebtn {
     display: inline-block;
     position: relative;
     float: right;

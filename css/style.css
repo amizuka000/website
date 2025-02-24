@@ -236,6 +236,10 @@ nav{
   display: none;
 }
 
+.closebtn{
+  display: none;
+}
+
 .topnav{
   list-style-type: none;
   background-color: #F0ECE2;
@@ -380,6 +384,10 @@ display: flex;
    height: 100%;
    justify-content: center;
    align-items: center;
+ }
+
+ #scrollButton:hover{
+   text-decoration: none;
  }
 
   /*========================= INDEX ===========================*/
