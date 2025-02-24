@@ -1,10 +1,11 @@
-function openCloseNav() {
+function openNav() {
   var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
     document.body.style.overflow = 'hidden';
-  } else {
-    x.className = "topnav";
+    x.style.width = "70%";
+}
+
+function closeNav(){
+  var x = document.getElementById("myTopnav");
     document.body.style.overflow = 'auto';
-  };
+    x.style.width = "0";
 }
