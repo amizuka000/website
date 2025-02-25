@@ -1,21 +1,17 @@
 
 /*MEDIA QUERIES*/
+/**/
+/*720px - hamburger nav*/
+/*500px - individual pages become mobile*/
 
 
-/* Hide the small screen hamburger icon*/
-.topnav .icon, .topnav img{
-  display: none;
+@media (min-width: 720px) and (max-width: 850px){
+.topnav a{
+  padding: 2em 1.25em;
+}
 }
 
-
-
-/*For explorePortfolio arrows*/
-@media (max-width: 900px){
-  .explorePortfolio{
-    display: none;
-  }
-}
-
+/*=============================720px===============================*/
 
 @media (min-width: 720px){
 
@@ -23,11 +19,149 @@
   .maintext.contact{
     max-width: 600px;
   }
+
+  .explorePortfolioMobile{
+    display: none;
+  }
+
 }
 
-/*=============================720px===============================*/
+/*720 px media query and a touch screen*/
+@media (max-width: 720px) and (pointer: coarse){
+
+  .artprev:hover,
+  .artnext:hover {
+    pointer-events: none;
+  }
+
+}
+
+
 /*Consolidates columns, removes images to increase space for text*/
 @media (max-width: 720px){
+
+  .explorePortfolio{
+    display: none;
+  }
+
+  .explorePortfolioMobile{
+    display: block;
+  }
+
+  .maintext {
+    padding: 10%;
+  }
+
+  /*==================HAMBURGER SIDENAV================*/
+
+  .topnav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #F0ECE2;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.4s;
+  padding: 0;
+  }
+
+
+  .topnav a {
+    display: block;
+    text-align: left;
+    padding: 1em 2em;
+    white-space: nowrap;
+    font-size: 1em;
+  }
+
+  .topnav .circle{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+  }
+
+  .topnav .closebtn {
+    display: inline-block;
+    position: relative;
+    float: right;
+    text-align: center;
+   height: 2em; /*calculated from .topnav a padding*/
+  }
+
+
+  .topnav .closebtn i{
+  display: flex;
+     height: 100%;
+     justify-content: center;
+     align-items: center;
+   }
+
+
+#outsidenav {
+  display: none;
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 999;
+}
+
+
+/*===================HEADER=================*/
+
+/*Name Logo*/
+  .logo{
+    padding: 0 1em;
+     text-align: center;
+  }
+
+  .logo img{
+  height: 3em;
+  width: auto;
+  display: inline;
+  vertical-align: top;
+  }
+
+  .logo a{
+    display: inline;
+  }
+
+/*Hamburger icon*/
+  .icon{
+    display:block;
+    text-decoration: none;
+    color: #FFF;
+    position: absolute;
+    top: 1.5em;
+  }
+
+  /*This combination centers the fontawesome icon*/
+  .icon i{
+     display: flex;
+     height: 100%;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     z-index: 999;
+     padding-left: 1em;
+     padding-right: 1em;
+ }
+
+
+  .icon:hover{
+    text-decoration: none;
+  }
+
+#contentHeight{
+  transition: 0.4s;
+}
+
+/*===================end of sidenav=================*/
+
+
 
 /*When screen gets too thin, multiple columns get consolidated into one column*/
   .mobilecolumn{
@@ -41,13 +175,6 @@
   padding-left:0;
 }
 
-  .sidebar p {
-    font-size: 1em;
-  }
-
-  .logo img{
-    width: 45%;
-  }
 
   /*When screen gets too thin, images get deleted to allow max text*/
   .fifteencolumn img{
@@ -66,15 +193,6 @@
     text-align: center;
   }
 
-  .topnav a{
-    font-size: 0.9em;
-    padding:0.5em 1em;
-  }
-
-  .topnav{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-  }
 
   .skillstablecontainer{
     display: block;
@@ -142,30 +260,23 @@
   }
 
 
+  .triangle-isosceles-left{
+    width: 75%;
+  }
+
+  .triangle-isosceles-right{
+    width: 75%;
+  }
+
 }/*end of 720px*/
 
 
 
 /*============================500px==========================*/
-/*For when screen gets too small. 500px = When top nav bar becomes a hamburger */
-
-
-@media (min-width: 500px){
-  .explorePortfolioMobile{
-    display: none;
-  }
-}
-
+/*For when screen gets too small. 500px = Needs max space */
 
 @media (max-width: 500px){
 
-  .maintext {
-    padding: 10%;
-  }
-
-  .explorePortfolioMobile{
-    display: block;
-  }
 
 
   .artcolumn img{
@@ -192,15 +303,6 @@
     display: none;
   }
 
-
-  .logo h2 {
-    font-size: 0.75em;
-  }
-
-  .logo img{
-    width: 60%;
-  }
-
   .fifteencolumn img{
     display: none;
   }
@@ -214,13 +316,7 @@
   }
 
 
-  .triangle-isosceles-left{
-    width: 75%;
-  }
 
-  .triangle-isosceles-right{
-    width: 75%;
-  }
 
 
 /*increases usable space of accordion if screen is small*/
@@ -233,125 +329,169 @@
   }
 
 
-
-
-
-/*sidenav*/
-
-
-  .logo{
-    padding: 0 1em;
-     text-align: center;
-  }
-
-  .logo img{
-  height: 3em;
-  width: auto;
-  display: inline;
-  vertical-align: top;
-  }
-
-  .logo a{
-    display: inline;
-  }
-
-
-
-  .icon{
-    display:block;
-    text-decoration: none;
-    color: #FFF;
-    position: absolute;
-    top: 1.5em;
-  }
-
-  /*This combination centers the fontawesome icon*/
-  .icon i{
-  display: flex;
-     height: 100%;
-     justify-content: center;
-     align-items: center;
-     text-decoration: none;
-     z-index: 999;
-     padding-left: 1em;
-     padding-right: 1em;
-   }
-
-.icon:hover{
-  text-decoration: none;
-}
-
-#contentHeight{
-  transition: 0.4s;
-}
-
-  /*HAMBURGER*/
-    /* When the screen is less than 500 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-
-  .topnav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #F0ECE2;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.4s;
-  padding: 0;
-  }
-
-
-  .topnav a {
-    display: block;
-    text-align: left;
-    padding: 1em 2em;
-    white-space: nowrap;
-    font-size: 1em;
-  }
-
-  .topnav .circle{
-    display: inline-block;
-    width: 100%;
-    position: relative;
-  }
-
-  .topnav .closebtn {
-    display: inline-block;
-    position: relative;
-    float: right;
-    text-align: center;
-   height: 2em; /*calculated from .topnav a padding*/
-  }
-
-
-  .topnav .closebtn i{
-  display: flex;
-     height: 100%;
-     justify-content: center;
-     align-items: center;
-   }
-
-
-#outsidenav {
-  display: none;
-  width: 30%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  z-index: 999;
-}
-
-
 } /*end of 500px*/
 
 
-/*720 px media query and a touch screen*/
-@media (max-width: 720px) and (pointer: coarse){
 
-  .artprev:hover,
-  .artnext:hover {
+
+
+
+@media (min-width:25em){
+
+  .typewriterwrapper {
+    max-width: calc(100%-10em);
+    padding: 1em;
+    margin: auto;
+    border-color:#F0ECE2;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 3em;
+    display: block;
+  }
+
+
+  .typewriter {
+    width: fit-content;
+    position:relative;
+    flex: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: break-word;
+
+  }
+
+  .typewriter p{
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 3s steps(19), endblinking 3s steps(10);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-right: 2px solid #444;
+    text-align: center;
+    margin: 0 0;
+  }
+
+  @keyframes typewriter {
+      0%{
+          width: 0%;
+      }
+      66% {
+          width: 100%;
+      }
+      100% {
+        width: 100%;
+      }
+  }
+
+  @keyframes endblinking{
+    0%{
+      border-color: #444;
+    }
+    66%{
+      border-color: #444;
+    }
+    85%{
+      border-color: transparent;
+    }
+  100%{
+    border-color: #444;
+  }
+  }
+
+}/*end of 25em media query*/
+
+
+
+
+/*Circle navigation animation*/
+@media (min-width: 720px) and (pointer: fine){
+
+  .topnav {
+    justify-content: center; /*centers the navigations if not in mobile form*/
+    display: flex;
+  }
+
+  .circle {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+
+  .circle svg {
+    position: absolute;
+    top: -0.25em;
+    left: 0;
+    width: 100%;
+    height: 130%;
     pointer-events: none;
   }
-}
+
+  .circle path {
+    stroke: #444;
+    stroke-width: 12px;
+    stroke-dasharray: 0 1500;
+  }
+
+  .circle:hover path {
+    animation: draw 1s forwards;
+  }
+
+  @keyframes draw {
+    from {
+      stroke-dasharray: 0 1500;
+    }
+
+    to {
+      stroke-dasharray: 1500 1500;
+    }
+  }
+  } /*end of Circle*/
+
+
+/*Removes the circle for less than 500px*/
+  @media (max-width: 720px){
+    .circle {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+
+    .circle svg {
+      position: absolute;
+      top: -0.25em;
+      left: 0;
+      width: 100%;
+      height: 130%;
+      pointer-events: none;
+      display: none;
+    }
+
+  }
+
+
+/*Removes circle if the pointer is coarse (touch panel), regardless of screen size*/
+  @media (min-width: 720px) and (pointer: coarse){
+
+    .topnav {
+      justify-content: center; /*centers the navigations if not in mobile form*/
+      display: flex;
+    }
+
+    .circle {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .circle svg {
+      position: absolute;
+      top: -0.25em;
+      left: 0;
+      width: 100%;
+      height: 130%;
+      pointer-events: none;
+    }
+  }

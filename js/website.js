@@ -77,7 +77,7 @@ function setContentHeight() {
   var contentHeightValue = document.body.clientHeight; //find the body height
 
       //For non-mobile versions with a nav bar
-        if (contentHeightValue < window.innerHeight && window.innerWidth > 500) {
+        if (contentHeightValue < window.innerHeight && window.innerWidth > 720) {
             var headerHeight = document.getElementById('header').clientHeight;
             var footerHeight = document.getElementById('footer').clientHeight;
             var navHeight = document.getElementById('myTopnav').clientHeight;
@@ -87,7 +87,7 @@ function setContentHeight() {
        }
 
        //For mobile versions without the nav bar
-        else if (contentHeightValue < window.innerHeight && window.innerWidth < 500)  {
+        else if (contentHeightValue < window.innerHeight && window.innerWidth < 720)  {
           var headerHeight = document.getElementById('header').clientHeight;
           var footerHeight = document.getElementById('footer').clientHeight;
           const windowHeight = window.innerHeight;

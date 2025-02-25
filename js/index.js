@@ -37,6 +37,18 @@ function hideArrow(){
   document.getElementById("drawArrowRight").style.display = "none";
 }
 
+function highlightNav(){
+  document.getElementById("myTopnav").style.filter = 'brightness(0.9)';
+  var t = setTimeout(function(){
+      document.getElementById("myTopnav").style.filter = 'brightness(1)';
+    },(0.4*1000));
+
+
+
+
+
+}
+
 //Shows the arrows for mobile "Explore my portfolio!"
 /*
 function showArrowHorizontal(){
@@ -75,26 +87,3 @@ function setArrowPosition(){
 
   window.addEventListener('load', setArrowPosition, true);
   window.addEventListener('resize', setArrowPosition, true);
-
-
-/*
-function setHorizontalArrowHeight(){
-  var svgHorizontalArrow = document.getElementById('svgHorizontalArrow');
-  var navHeight = document.getElementById('myTopnav').clientHeight;
-  console.log(navHeight);
-  svgHorizontalArrow.setAttribute('height', navHeight);
-
-
-  var headerHeight = document.getElementById('header').clientHeight;
-  document.getElementById("drawArrowHorizontal").style.top = `calc(${headerHeight}px + 10px)`;
-
-  var innerWidth = window.innerWidth;
-  let em = parseFloat(getComputedStyle(document.getElementById('myTopnav')).fontSize); // Adding 1em space (based on font size)
-
-  document.getElementById("drawArrowHorizontal").style.left = `calc(${innerWidth}px - 7*${em}px)`;
-
-    }
-
-  window.addEventListener('load', setHorizontalArrowHeight, true);
-  window.addEventListener('resize', setHorizontalArrowHeight, true);
-*/

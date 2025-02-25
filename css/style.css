@@ -240,6 +240,7 @@ nav{
   display: none;
 }
 
+
 .topnav{
   list-style-type: none;
   background-color: #F0ECE2;
@@ -264,98 +265,11 @@ nav{
 }
 
 
-/*Circle navigation animation*/
-@media (min-width: 500px) and (pointer: fine){
+/* Hide the small screen hamburger icon*/
+.topnav .icon, .topnav img{
+  display: none;
+}
 
-  .topnav {
-    justify-content: center; /*centers the navigations if not in mobile form*/
-    display: flex;
-  }
-
-  .circle {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    z-index: 999;
-  }
-
-
-  .circle svg {
-    position: absolute;
-    top: -0.25em;
-    left: 0;
-    width: 100%;
-    height: 130%;
-    pointer-events: none;
-  }
-
-  .circle path {
-    stroke: #444;
-    stroke-width: 12px;
-    stroke-dasharray: 0 1500;
-  }
-
-  .circle:hover path {
-    animation: draw 1s forwards;
-  }
-
-  @keyframes draw {
-    from {
-      stroke-dasharray: 0 1500;
-    }
-
-    to {
-      stroke-dasharray: 1500 1500;
-    }
-  }
-  } /*end of Circle*/
-
-
-/*Removes the circle for less than 500px*/
-  @media (max-width: 500px){
-    .circle {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-    }
-
-
-    .circle svg {
-      position: absolute;
-      top: -0.25em;
-      left: 0;
-      width: 100%;
-      height: 130%;
-      pointer-events: none;
-      display: none;
-    }
-
-  }
-
-
-/*Removes circle if the pointer is coarse (touch panel), regardless of screen size*/
-  @media (min-width: 500px) and (pointer: coarse){
-
-    .topnav {
-      justify-content: center; /*centers the navigations if not in mobile form*/
-      display: flex;
-    }
-
-    .circle {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-    }
-
-    .circle svg {
-      position: absolute;
-      top: -0.25em;
-      left: 0;
-      width: 100%;
-      height: 130%;
-      pointer-events: none;
-    }
-  }
 
 
 /*======================= SCROLL TO TOP ==========================*/
@@ -472,14 +386,11 @@ display: flex;
 
 
 
-
-
-  .explorePortfolioMobile button:hover{
+  .explorePortfolioMobile button:hover, .explorePortfolioHighlight button:hover{
     text-decoration: none;
     filter: brightness(0.9);
     cursor: default;
   }
-
 
 
 
@@ -895,67 +806,3 @@ display: flex;
 .typewriter p{
   text-align: center;
 }
-
-@media (min-width:25em){
-
-  .typewriterwrapper {
-    max-width: calc(100%-10em);
-    padding: 1em;
-    margin: auto;
-    border-color:#F0ECE2;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 3em;
-    display: block;
-  }
-
-
-  .typewriter {
-    width: fit-content;
-    position:relative;
-    flex: auto;
-    margin-left: auto;
-    margin-right: auto;
-    overflow-wrap: break-word;
-
-  }
-
-  .typewriter p{
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typewriter 3s steps(19), endblinking 3s steps(10);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    border-right: 2px solid #444;
-    text-align: center;
-    margin: 0 0;
-  }
-
-  @keyframes typewriter {
-      0%{
-          width: 0%;
-      }
-      66% {
-          width: 100%;
-      }
-      100% {
-        width: 100%;
-      }
-  }
-
-  @keyframes endblinking{
-    0%{
-      border-color: #444;
-    }
-    66%{
-      border-color: #444;
-    }
-    85%{
-      border-color: transparent;
-    }
-  100%{
-    border-color: #444;
-  }
-  }
-
-}/*end of 25em media query*/
