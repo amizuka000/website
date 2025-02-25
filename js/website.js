@@ -68,12 +68,20 @@ function getMarginHeight() {
   const marginTop = parseInt(style.marginTop, 10);
   const marginBottom = parseInt(style.marginBottom, 10);
   return marginTop + marginBottom;
+}
 
+function getPaddingHeight() {
+  const paddingElement = document.getElementById("contentHeight");
+  const style = getComputedStyle(paddingElement);
+  const paddingTop = parseInt(style.paddingTop, 10);
+  const paddingBottom = parseInt(style.paddingBottom, 10);
+  return paddingTop + paddingBottom;
 }
 
 
 function setContentHeight() {
   const marginHeight = getMarginHeight();
+  const paddingHeight = getPaddingHeight();
   var contentHeightValue = document.body.clientHeight; //find the body height
 
       //For non-mobile versions with a nav bar
@@ -83,7 +91,8 @@ function setContentHeight() {
             var navHeight = document.getElementById('myTopnav').clientHeight;
             const windowHeight = window.innerHeight;
 
-            document.getElementById("contentHeight").style.height = `calc(${windowHeight}px -  ${headerHeight}px - ${footerHeight}px - ${navHeight}px - ${marginHeight}px)`;
+
+            document.getElementById("contentHeight").style.height = `calc(${windowHeight}px -  ${headerHeight}px - ${footerHeight}px - ${navHeight}px - ${marginHeight}px - ${paddingHeight}px)`;
        }
 
        //For mobile versions without the nav bar
@@ -92,12 +101,14 @@ function setContentHeight() {
           var footerHeight = document.getElementById('footer').clientHeight;
           const windowHeight = window.innerHeight;
 
-          document.getElementById("contentHeight").style.height = `calc(${windowHeight}px -  ${headerHeight}px - ${footerHeight}px - ${marginHeight}px)`;
+          document.getElementById("contentHeight").style.height = `calc(${windowHeight}px -  ${headerHeight}px - ${footerHeight}px - ${marginHeight}px - ${paddingHeight}px)`;
+
         }
 
 
           else{
             document.getElementById("contentHeight").style.height = "";
+
                   }
                   //document.getElementById("contentHeight").style.top = `${headerHeight}px`;
               }
@@ -134,7 +145,7 @@ window.addEventListener('resize', sizeAccordion, true);
 function openNav() {
   var x = document.getElementById("myTopnav");
     document.body.style.overflow = 'hidden';
-    document.getElementById("contentHeight").style.filter = 'brightness(0.5)';
+    document.getElementById("outsidenav").style.filter = 'brightness(0.5)';
     document.getElementById("outsidenav").style.display = 'block';
     x.style.width = "70%";
 }

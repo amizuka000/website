@@ -39,15 +39,27 @@ p{
 }
 
 h1{
-font-size: 1.5em;
-font-weight: bold;
-letter-spacing: 0.05em;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  overflow-wrap: break-word;
 }
 
 h2{
-  font-size: 1.1em;
-  font-weight: normal;
+  font-size: 1.25em;
+  font-weight: bold;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
 }
 
 button {
@@ -115,7 +127,6 @@ button:hover {
 }
 
 
-
 hr {
   height: 1px;
   background-color: #F0ECE2;
@@ -126,7 +137,7 @@ hr {
 
 .maintext{
   background-color: #fff;
-  padding: 5% 10%;
+  padding: 3% 10%;
   margin:0 auto; /*centers content after 1000px*/
   max-width: 1000px; /*To prevent content from getting too wide to read*/
 }
@@ -193,16 +204,6 @@ header{
 }
 
 
-.logo h1{
-  text-align: center;
-  font-size: 3em;
-  text-transform: uppercase;
-  margin-top: 0;
-  line-height: 0;
-  padding: 0.5em;
-  color: #891240;
-}
-
 .logo img{
   display: block;
   margin-left: auto;
@@ -219,6 +220,7 @@ footer{
   padding: 1em;
   text-align: center;
 }
+
 
 .credits p{
   font-size: 0.7em;
@@ -315,8 +317,14 @@ display: flex;
 
 .index h1{
   font-size: 2em;
+  text-transform: none;
+  margin-top: 1.5em;
 }
 
+.index h2{
+  text-transform: none;
+  font-weight: normal;
+}
 
   .index p{
     text-align: center;
@@ -427,8 +435,9 @@ display: flex;
 
 /*========================= ABOUT ME ============================*/
 
-.aboutme h1{
+.aboutme h2{
   margin: 0;
+  text-transform: none;
 }
 
 .aboutme img{
@@ -551,22 +560,15 @@ display: flex;
   text-align: center;
 }
 
-.projectsindividual h1{
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 1.25em;
-  font-weight: bold;
-  overflow-wrap: break-word;
-}
-
+/*
 .projectsindividual h2{
   text-transform: uppercase;
-  letter-spacing: 0.05em;
   font-size: 1em;
   font-weight: bold;
   overflow-wrap: break-word;
   text-align: left;
 }
+*/
 
 .projectsindividual p{
   text-align: left;
@@ -786,8 +788,6 @@ display: flex;
   }
 
   .contact-left h2{
-    font-size: 1.25em;
-    font-weight: bold;
     line-height: 0.5;
     margin: 0;
     text-align: left;
@@ -795,8 +795,6 @@ display: flex;
 
 
   .contact-right h2{
-    font-size: 1.25em;
-    font-weight: bold;
     line-height: 0.5;
     margin: 0;
     text-align: right;
