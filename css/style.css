@@ -787,14 +787,14 @@ display: flex;
     width:0;
   }
 
-  .contact-left h2{
+  .contact-left h3{
     line-height: 0.5;
     margin: 0;
     text-align: left;
   }
 
 
-  .contact-right h2{
+  .contact-right h3{
     line-height: 0.5;
     margin: 0;
     text-align: right;
