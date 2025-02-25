@@ -509,13 +509,12 @@ display: flex;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap:3.5%;
+  gap:2em;
 }
 
   .projectscolumn {
     width: 300px;/*33.33%*/
     height: 300px;
-    margin-bottom: 3.5%;
     background-color: #F0ECE2;
     box-sizing: border-box;
     padding: 1em;
@@ -595,14 +594,14 @@ display: flex;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap:3.5%;
+  gap:2em;
 }
+
 
   .artcolumn img{
     width: 300px;/*33.33%*/
     height: 300px;
     object-fit: cover;
-    margin-bottom: 7%;
   }
 
   /* The Modal (background) */
