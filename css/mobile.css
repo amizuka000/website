@@ -292,6 +292,7 @@
   }
 
 /*clears the 300px height requirement*/
+
   .projectscolumn{
     height: auto;
     vertical-align: middle;
@@ -300,8 +301,11 @@
   }
 
   .projectscolumn img, .projectscolumn iframe{
-    display: none;
+    /*display: none;*/
+    height: 100px;
+    margin-bottom: 0.5em;
   }
+
 
   .fifteencolumn img{
     display: none;
@@ -314,9 +318,6 @@
   .artnumbertext {
     display: none;
   }
-
-
-
 
 
 /*increases usable space of accordion if screen is small*/
