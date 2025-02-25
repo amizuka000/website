@@ -135,6 +135,7 @@ function openNav() {
   var x = document.getElementById("myTopnav");
     document.body.style.overflow = 'hidden';
     document.getElementById("contentHeight").style.filter = 'brightness(0.5)';
+    document.getElementById("outsidenav").style.display = 'block';
     x.style.width = "70%";
 }
 
@@ -142,6 +143,7 @@ function closeNav(){
   var x = document.getElementById("myTopnav");
     document.body.style.overflow = 'auto';
     document.getElementById("contentHeight").style.filter = 'brightness(1)';
+    document.getElementById("outsidenav").style.display = 'none';
     x.style.width = "0";
 }
 

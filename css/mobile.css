@@ -297,7 +297,7 @@
   left: 0;
   background-color: #F0ECE2;
   overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
+  transition: 0.4s;
   padding: 0;
   }
 
@@ -332,6 +332,16 @@
      align-items: center;
    }
 
+
+#outsidenav {
+  display: none;
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 999;
+}
 
 
 } /*end of 500px*/
