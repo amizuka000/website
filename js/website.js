@@ -15,9 +15,12 @@ let myScrollButton = document.getElementById("scrollButton");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+    if (window.innerWidth > 500){
     myScrollButton.style.display = "block";
-  } else {
+  }
+  }
+  else {
     myScrollButton.style.display = "none";
   }
 
@@ -145,7 +148,6 @@ window.addEventListener('resize', sizeAccordion, true);
 function openNav() {
   var x = document.getElementById("myTopnav");
     document.body.style.overflow = 'hidden';
-    document.getElementById("outsidenav").style.filter = 'brightness(0.5)';
     document.getElementById("outsidenav").style.display = 'block';
     x.style.width = "70%";
 }
@@ -153,7 +155,6 @@ function openNav() {
 function closeNav(){
   var x = document.getElementById("myTopnav");
     document.body.style.overflow = 'auto';
-    document.getElementById("contentHeight").style.filter = 'brightness(1)';
     document.getElementById("outsidenav").style.display = 'none';
     x.style.width = "0";
 }

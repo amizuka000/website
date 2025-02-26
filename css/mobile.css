@@ -102,7 +102,7 @@
 #outsidenav {
   display: none;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100%;
@@ -281,6 +281,11 @@
 
 @media (max-width: 500px){
 
+header{
+  position: sticky;
+  top: 0;
+  z-index: 88;
+}
 
 
   .artcolumn img{
