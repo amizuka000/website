@@ -599,6 +599,10 @@ display: flex;
   gap:2em;
 }
 
+/*Removes slight gap on bottom of 300 x 300 image*/
+.artcolumn{
+  font-size: 0;
+}
 
   .artcolumn img{
     width: 300px;/*33.33%*/
