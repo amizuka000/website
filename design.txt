@@ -3,7 +3,7 @@ This text file is information regarding the design of website & miscellaneous ot
 
 
 Color Scheme
-#444 - dark grey (text)
+#333 - dark grey (text)
 #891204 - burgundy (header, footer)
 #F0ECE2 - cream (navigation bar, accordion, everything else)
 #FFF - white (main)

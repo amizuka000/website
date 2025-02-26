@@ -7,7 +7,7 @@ body{
   font-family: Verdana, sans-serif;
   font-weight: normal;
   line-height: 1.6;
-  color: #444;
+  color: #333;
   max-width: 2000px;
   margin-left:auto; /*to center the content after width=2000px*/
   margin-right: auto;
@@ -18,7 +18,7 @@ body{
 
 a{
   font-size: 1em;
-  color: #444;
+  color: #333;
   text-decoration: none;
 }
 
@@ -75,7 +75,7 @@ button {
   font-family: inherit;
   font-size: inherit;
   font-weight: normal;
-  color: #444;
+  color: #333;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -106,7 +106,7 @@ button:hover {
   font-family: inherit;
   font-size: inherit;
   font-weight: normal;
-  color: #444;
+  color: #333;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -318,7 +318,7 @@ display: flex;
 .index h1{
   font-size: 2em;
   text-transform: none;
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 .index h2{
@@ -640,7 +640,7 @@ display: flex;
 
   /* The Close Button */
   .artclose {
-    color: #444;
+    color: #333;
     position: absolute;
     top: 0;
     right: 0;
@@ -687,7 +687,7 @@ display: flex;
     position: absolute;
     top: calc((100vh - 4em) / 2); /* height is half of the image + top margin*/
     background-color: transparent;
-    color:#444;
+    color:#333;
     font-weight: bold;
     margin:0.5em;
     font-size: 1.5em;
@@ -721,7 +721,7 @@ display: flex;
     text-align: center;
     background-color: #F0ECE2 ;
     padding: 0 3em;
-    color:#444;
+    color:#333;
   }*/
 
   .artactive,

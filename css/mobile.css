@@ -109,7 +109,7 @@
   right: 0;
   height: 100%;
   z-index: 99;
-  background-color: #444;
+  background-color: #333;
   opacity: 0.7;
 }
 
@@ -233,7 +233,7 @@
     font-size: 15px;
     font-weight: bold;
     line-height: 0.5;
-    color: #444;
+    color: #333;
     margin: 0;
     text-align: left;
   }
@@ -245,7 +245,7 @@
     font-size: 15px;
     font-weight: bold;
     line-height: 0.5;
-    color: #444;
+    color: #333;
     margin: 0;
     text-align: right;
   }
@@ -386,7 +386,7 @@ height: 2.5em;
     animation: typewriter 3s steps(19), endblinking 3s steps(10);
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    border-right: 2px solid #444;
+    border-right: 2px solid #333;
     text-align: center;
     margin: 0 0;
   }
@@ -405,16 +405,16 @@ height: 2.5em;
 
   @keyframes endblinking{
     0%{
-      border-color: #444;
+      border-color: #333;
     }
     66%{
-      border-color: #444;
+      border-color: #333;
     }
     85%{
       border-color: transparent;
     }
   100%{
-    border-color: #444;
+    border-color: #333;
   }
   }
 
@@ -449,7 +449,7 @@ height: 2.5em;
   }
 
   .circle path {
-    stroke: #444;
+    stroke: #333;
     stroke-width: 12px;
     stroke-dasharray: 0 1500;
   }
