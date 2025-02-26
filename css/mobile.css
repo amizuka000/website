@@ -287,6 +287,14 @@ header{
   z-index: 88;
 }
 
+.logo img{
+height: 2.5em;
+}
+
+.icon{
+  top: 1.25em;
+}
+
 
   .artcolumn img{
     height: auto;
