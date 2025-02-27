@@ -283,6 +283,10 @@
 
 @media (max-width: 500px){
 
+  .index h2{
+    font-size: 1.1em;
+  }
+
 header{
   position: sticky;
   top: 0;
