@@ -792,14 +792,14 @@ display: flex;
   }
 
   .contact-left h3{
-    line-height: 0.5;
+    line-height: 1;
     margin: 0;
     text-align: left;
   }
 
 
   .contact-right h3{
-    line-height: 0.5;
+    line-height: 1;
     margin: 0;
     text-align: right;
   }
