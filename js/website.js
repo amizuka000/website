@@ -65,6 +65,7 @@ function topFunction() {
 
 //====================Setting minimum content height for footer =============================
 //finding content margin height because it's not included in the clientHeight
+
 function getMarginHeight() {
   const marginElement = document.getElementById("contentHeight");
   const style = getComputedStyle(marginElement);
@@ -118,6 +119,10 @@ function setContentHeight() {
 
     window.addEventListener('load', setContentHeight, true);
     window.addEventListener('resize', setContentHeight, true);
+
+
+
+
 
 
 /*=============== ACCORDION ============================+*/

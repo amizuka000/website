@@ -624,6 +624,13 @@ display: flex;
     overflow: hidden;
     /*background-color: #F0ECE2 ;*/
     background: rgba(255, 255, 255, 0.97);
+    /*justify-content: center;*/
+  }
+
+  .artmodal-content {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
 
@@ -735,6 +742,30 @@ display: flex;
     transition: 0.4s;
     cursor: pointer;
   }
+
+
+
+/* Tab styling */
+.tab {
+  overflow: hidden;
+}
+
+
+.tab button:hover {
+  filter: brightness(0.9);
+  text-decoration: none;
+}
+
+.tab button.active {
+  filter: brightness(0.9);
+    text-decoration: none;
+}
+
+/* Tab content styling */
+.tabcontent {
+  display: none;
+}
+
 
 
   /*====================== CONTACT ==================================*/
