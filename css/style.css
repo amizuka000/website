@@ -455,7 +455,7 @@ display: flex;
     width: 100%;
     text-align: left;
     border: none;
-    border-radius: 0;
+    border-radius: 0.5rem;
     outline: none;
     transition: 0.4s;
     font-size: 1em;
@@ -468,10 +468,17 @@ display: flex;
 
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .accordionactive, .accordion:hover {
+  .accordion:hover {
     filter: brightness(0.9);
     text-decoration: none;
   }
+
+  .accordionactive {
+    filter: brightness(0.9);
+    text-decoration: none;
+    -webkit-text-stroke: #333 0.05em;
+  }
+
 
   /* Style the accordion panel. Note: hidden by default */
   .accordionpanel {
@@ -491,7 +498,7 @@ display: flex;
   }
 
   .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795\FE0E'; /* Unicode character for "plus" sign (+) */
   font-size: 1em;
   float: right;
   margin-left: 0.4em;
@@ -499,7 +506,7 @@ display: flex;
 }
 
 .accordionactive:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796\FE0E"; /* Unicode character for "minus" sign (-) */
 }
 
 .skillstablecontainer{
@@ -531,6 +538,7 @@ display: flex;
     letter-spacing: 0.05em;
     text-decoration: none;
     text-align: center;
+    border-radius: 0.5rem;
   }
 
   .projectscolumn img, .projectscolumn iframe{
@@ -541,6 +549,7 @@ display: flex;
     box-sizing: border-box;
     padding: 1em;
     margin-bottom: 1em;
+    border-radius: 0.5rem;
   }
 
 
@@ -605,9 +614,10 @@ display: flex;
 }
 
   .artcolumn img{
-    width: 300px;/*33.33%*/
-    height: 300px;
-    object-fit: cover;
+   width: 300px;/*33.33%*/
+   height: 300px;
+   object-fit: cover;
+   border-radius: 0.5rem;
   }
 
   /* The Modal (background) */
@@ -748,6 +758,7 @@ display: flex;
 /* Tab styling */
 .tab {
   overflow: hidden;
+  text-align: center;
 }
 
 
@@ -758,12 +769,15 @@ display: flex;
 
 .tab button.active {
   filter: brightness(0.9);
-    text-decoration: none;
+  text-decoration: none;
+  -webkit-text-stroke: #333 0.05em;
 }
+
 
 /* Tab content styling */
 .tabcontent {
   display: none;
+  text-align: center;
 }
 
 

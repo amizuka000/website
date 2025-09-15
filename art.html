@@ -115,132 +115,34 @@
 
 <h1>Art</h1>
 
-  <!-- Images used to open the lightbox -->
-  <div class="artrow">
-    <div class="artcolumn">
-      <img src="img/art/abstractflower.jpg" onclick="openModal();currentSlide(1)" class="arthover-shadow artalt" alt="Abstract Flower - Acrylic on canvas">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/twocats.jpg" onclick="openModal();currentSlide(2)" class="arthover-shadow artalt" alt="Two Cats - Acrylic on paper">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/crumble.jpg" onclick="openModal();currentSlide(3)" class="arthover-shadow artalt" alt="Crumble - Charcoal on paper">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/shadows.jpg" onclick="openModal();currentSlide(4)" class="arthover-shadow artalt" alt="Shadows - Pencil on paper">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/past.jpg" onclick="openModal();currentSlide(5)" class="arthover-shadow artalt" alt="Past - Pencil on paper">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/world.jpg" onclick="openModal();currentSlide(6)" class="arthover-shadow artalt" alt="World - Acrylic on canvas">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/time.jpg" onclick="openModal();currentSlide(7)" class="arthover-shadow artalt" alt="Time - Assemblage">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/timefoolery.jpg" onclick="openModal();currentSlide(8)" class="arthover-shadow artalt" alt="Time Foolery - Linoleum Print">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/roses.jpg" onclick="openModal();currentSlide(9)" class="arthover-shadow artalt" alt="Roses - Pencil on paper">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/gwb.jpg" onclick="openModal();currentSlide(10)" class="arthover-shadow artalt" alt="George Washington Bridge - Pencil on paper">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/cat.jpg" onclick="openModal();currentSlide(11)" class="arthover-shadow artalt" alt="Cat - Pencil on paper">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/river.jpg" onclick="openModal();currentSlide(12)" class="arthover-shadow artalt" alt="River - Acrylic on paper">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/rose.jpg" onclick="openModal();currentSlide(13)" class="arthover-shadow artalt" alt="Rose - Pen on paper">
-    </div>
-    <div class="artcolumn">
-      <img src="img/art/awholeworldinside.jpg" onclick="openModal();currentSlide(14)" class="arthover-shadow artalt" alt="A Whole World Inside - Colored pencil on paper">
-    </div>
-
-  </div> <!--end of artrow-->
-
-  <!-- The Modal/Lightbox -->
-  <div id="artmyModal" class="artmodal">
-<span class="artclose cursor" onclick="closeModal()">&times;</span>
+<!-- Tab buttons -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Photos')" id="defaultOpen">Photos</button>
+  <button class="tablinks" onclick="openTab(event, 'Drawings')">Drawings</button>
+</div>
 
 
-        <!-- Next/previous controls -->
-        <a class="artprev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="artnext" onclick="plusSlides(1)">&#10095;</a>
+<!-- Tab content -->
+ <div id="Photos" class="tabcontent">
+  <!-- Photo thumbnails will be inserted here -->
+</div>
+<div id="Drawings" class="tabcontent">
+  <!-- Drawing thumbnails will be inserted here -->
+</div>
 
 
-  <!--<div class="artmodal-content">-->
+<!-- Modal container -->
+<div id="artmyModal" class="artmodal" style="display:none;">
+  <span class="artclose cursor" onclick="closeModal()">&times;</span>
+  <a class="artprev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="artnext" onclick="plusSlides(1)">&#10095;</a>
 
-  <div class="artmySlides">
-    <img src="img/art/abstractflower.jpg">
+  <!-- Slide images -->
+  <div class="artmodal-content" id="modalSlidesContainer">
+    <!-- Slides will be inserted here by JS -->
   </div>
+</div>
 
-      <div class="artmySlides">
-        <img src="img/art/twocats.jpg">
-      </div>
-
-      <div class="artmySlides">
-        <img src="img/art/crumble.jpg">
-      </div>
-
-      <div class="artmySlides">
-        <img src="img/art/shadows.jpg">
-      </div>
-
-      <div class="artmySlides">
-        <img src="img/art/past.jpg">
-      </div>
-
-      <div class="artmySlides">
-        <img src="img/art/world.jpg">
-      </div>
-
-      <div class="artmySlides">
-        <img src="img/art/time.jpg">
-      </div>
-
-      <div class="artmySlides">
-        <img src="img/art/timefoolery.jpg">
-      </div>
-
-      <div class="artmySlides">
-        <img src="img/art/roses.jpg">
-      </div>
-
-      <div class="artmySlides">
-        <img src="img/art/gwb.jpg">
-      </div>
-
-      <div class="artmySlides">
-        <img src="img/art/cat.jpg">
-      </div>
-
-      <div class="artmySlides">
-        <img src="img/art/river.jpg">
-      </div>
-
-      <div class="artmySlides">
-        <img src="img/art/rose.jpg">
-      </div>
-
-      <div class="artmySlides">
-        <img src="img/art/awholeworldinside.jpg">
-      </div>
-
-
-
-      <!-- Caption text -->
-      <!--<div class="artcaption-container">
-        <p id="artcaption"></p>
-      </div>-->
-
-
-
-  <!--  </div>--> <!--end of artmodal-content-->
-  </div> <!--end of artmymodal-->
 
 
 

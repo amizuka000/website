@@ -223,6 +223,7 @@
     display: none;
   }
 
+
   /*
   .artmodal-content {
     margin: 4em 10%;
@@ -352,6 +353,12 @@ height: 2.5em;
   .accordionpanel{
     padding: 0.5em 1em;
   }
+
+
+  
+  .tab button {
+  font-size: 0.8em;
+}
 
 
 } /*end of 500px*/
