@@ -21,11 +21,19 @@ const drawings = [
 
 const photos = [
   { src: "img/artphotos/redbridge.jpg", alt: "Red bridge" },
-  { src: "img/artphotos/ojosui.jpg", alt: "Ojosui Water" },
+  { src: "img/artphotos/colosseum.jpg", alt: "Colosseum" },
+   { src: "img/artphotos/lucerne.jpg", alt: "Lucerne" },
+   { src: "img/artphotos/venice.jpg", alt: "Venice" },
+   { src: "img/artphotos/royalnavalmoon.jpg", alt: "Moon at Royal Naval College" },
+   { src: "img/artphotos/icelandcar.jpg", alt: "Iceland Car" },
   { src: "img/artphotos/stairandleaves.jpg", alt: "Stairs with autumn leaves" },
   { src: "img/artphotos/butterflies.jpg", alt: "Butterflies" },
+  { src: "img/artphotos/ojosui.jpg", alt: "Ojosui Water" },
   { src: "img/artphotos/bloodmoon.jpg", alt: "Blood Moon" },
-  { src: "img/artphotos/lucerne.jpg", alt: "Lucerne" },
+  { src: "img/artphotos/icelandsunrise.jpg", alt: "Iceland Sunrise" },
+  
+  
+ 
   // Add more photos as needed
 ];
 
