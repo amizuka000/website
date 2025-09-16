@@ -28,9 +28,17 @@ const photos = [
    { src: "img/artphotos/icelandcar.jpg", alt: "Iceland Car" },
   { src: "img/artphotos/stairandleaves.jpg", alt: "Stairs with autumn leaves" },
   { src: "img/artphotos/butterflies.jpg", alt: "Butterflies" },
-  { src: "img/artphotos/ojosui.jpg", alt: "Ojosui Water" },
+  { src: "img/artphotos/reykjavikaurora.jpg", alt: "Reykjavik Aurora" },
+  { src: "img/artphotos/221b.jpg", alt: "221B" },
+ // { src: "img/artphotos/ojosui.jpg", alt: "Ojosui Water" },
+ { src: "img/artphotos/tokyotower.jpg", alt: "Tokyo Tower" },
+ { src: "img/artphotos/stpeter.jpg", alt: "St Peter's Basilica" },
   { src: "img/artphotos/bloodmoon.jpg", alt: "Blood Moon" },
   { src: "img/artphotos/icelandsunrise.jpg", alt: "Iceland Sunrise" },
+  { src: "img/artphotos/portugalboat.jpg", alt: "Portugal Boat" },
+  { src: "img/artphotos/stonehenge.jpg", alt: "Stonehenge" },
+  { src: "img/artphotos/buildingandleaves.jpg", alt: "Building and Leaves" },
+  { src: "img/artphotos/reykjavikaurora.jpg", alt: "Reykjavik Aurora" },
   
   
  
