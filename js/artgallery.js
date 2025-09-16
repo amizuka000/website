@@ -38,7 +38,6 @@ const photos = [
   { src: "img/artphotos/portugalboat.jpg", alt: "Portugal Boat" },
   { src: "img/artphotos/stonehenge.jpg", alt: "Stonehenge" },
   { src: "img/artphotos/buildingandleaves.jpg", alt: "Building and Leaves" },
-  { src: "img/artphotos/reykjavikaurora.jpg", alt: "Reykjavik Aurora" },
   
   
  
