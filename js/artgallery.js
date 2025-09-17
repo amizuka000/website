@@ -29,6 +29,7 @@ const photos = [
   { src: "img/artphotos/stairandleaves.jpg", alt: "Stairs with autumn leaves" },
   { src: "img/artphotos/butterflies.jpg", alt: "Butterflies" },
   { src: "img/artphotos/reykjavikaurora.jpg", alt: "Reykjavik Aurora" },
+  { src: "img/artphotos/icelandice.jpg", alt: "Iceland Ice" },
   { src: "img/artphotos/221b.jpg", alt: "221B" },
  // { src: "img/artphotos/ojosui.jpg", alt: "Ojosui Water" },
  { src: "img/artphotos/tokyotower.jpg", alt: "Tokyo Tower" },
