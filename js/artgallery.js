@@ -34,11 +34,15 @@ const photos = [
  // { src: "img/artphotos/ojosui.jpg", alt: "Ojosui Water" },
  { src: "img/artphotos/tokyotower.jpg", alt: "Tokyo Tower" },
  { src: "img/artphotos/stpeter.jpg", alt: "St Peter's Basilica" },
+ { src: "img/artphotos/aoiike.jpg", alt: "Aoiike" },
   { src: "img/artphotos/bloodmoon.jpg", alt: "Blood Moon" },
   { src: "img/artphotos/icelandsunrise.jpg", alt: "Iceland Sunrise" },
   { src: "img/artphotos/portugalboat.jpg", alt: "Portugal Boat" },
+  { src: "img/artphotos/mtyotei.jpg", alt: "Mt Yotei" },
   { src: "img/artphotos/stonehenge.jpg", alt: "Stonehenge" },
   { src: "img/artphotos/buildingandleaves.jpg", alt: "Building and Leaves" },
+  { src: "img/artphotos/hakodate.jpg", alt: "Hakodate" },
+  { src: "img/artphotos/moiwasunset.jpg", alt: "Moiwa Sunset" },
   
   
  
