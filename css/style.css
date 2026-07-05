@@ -515,10 +515,12 @@ display: flex;
   .accordion:after {
   content: '';
   height: 1em;
-  width: 1em;
+  min-width: 1em;
+  margin-left: 1em;
   overflow: visible;
   background-image: url('../img/plussign.svg');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   filter: invert(3%) sepia(1%) saturate(4641%) hue-rotate(314deg) brightness(86%) contrast(63%);
 } 
 
