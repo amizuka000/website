@@ -464,6 +464,10 @@ display: flex;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin: 0;
+    display: flex;
+    align-items: center; /* Vertically centers all child elements */
+    justify-content: space-between; /* Pushes items to opposite sides (simulating float: left/right) */
+
   }
 
 
@@ -497,17 +501,40 @@ display: flex;
     border-style: hidden;
   }
 
+  /*
   .accordion:after {
-  content: '\02795\FE0E'; /* Unicode character for "plus" sign (+) */
+  content: '\02795\FE0E';
   font-size: 1em;
   float: right;
   margin-left: 0.4em;
   overflow: visible;
+} 
+  */
+
+  
+  .accordion:after {
+  content: '';
+  height: 1em;
+  width: 1em;
+  overflow: visible;
+  background-image: url('../img/plussign.svg');
+  background-size: cover;
+  filter: invert(3%) sepia(1%) saturate(4641%) hue-rotate(314deg) brightness(86%) contrast(63%);
+} 
+
+
+/*
+.accordionactive:after {
+  content: "\2796\FE0E";
+}
+  */
+
+  .accordionactive:after {
+  background-image: url('../img/minussign.svg');
+  background-size: contain;
+  filter: invert(3%) sepia(1%) saturate(4641%) hue-rotate(314deg) brightness(86%) contrast(63%);
 }
 
-.accordionactive:after {
-  content: "\2796\FE0E"; /* Unicode character for "minus" sign (-) */
-}
 
 .skillstablecontainer{
   display: grid;

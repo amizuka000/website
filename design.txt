@@ -20,7 +20,7 @@ Footer Height
 https://stackoverflow.com/questions/52613574/calculating-a-responsive-headers-height-and-using-the-result-in-the-style-of-an
 
 Favicon Generator
-https://favicomatic.com/
+https://favicontools.com/
 
 SVGs
 Inkscape app
