@@ -126,6 +126,16 @@ button:hover {
   cursor: pointer;
 }
 
+.presentationlink{
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: normal;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .presentationlink:hover, .presentationlink:hover i{
 text-decoration: underline;
   text-decoration-thickness: 2px;
