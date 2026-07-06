@@ -201,6 +201,7 @@ header{
   background: #891240;
   margin: 0;
   padding: 0.5em;
+  z-index: 9999;
 }
 
 
@@ -625,7 +626,7 @@ display: flex;
   background-color: #F0ECE2;
   padding:2em;
   margin-bottom: 2em;
-  border-radius: 2em;
+  border-radius: 1em;
 }
 
   /*============================= ART ===========================*/

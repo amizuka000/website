@@ -47,7 +47,7 @@
 
   <header id="header"> <!--begin header-->
 
-    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
       <i class="fa fa-bars"></i>
     </a>
 
@@ -61,12 +61,9 @@
 
   <nav> <!--navigation begins-->
 
-    <div id="outsidenav" onclick="closeNav()"></div>
+    <div id="outsidenav" onclick="toggleNav()"></div>
 
     <div class="topnav" id="myTopnav">
-
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-close fa-fw"></i></a>
-
 
       <div class="circle">
         <a href="aboutme.html">About Me</a>
@@ -142,8 +139,10 @@ and technologies learned in class. You have the freedom to
       <p>
         I handled the scripting and design of our presentation.
       </p>
-      <img src="img/projects/stonybrook/stonybrookpresentation.png" style="max-width: 50%"><br>
-      <a class="linkbutton" href="docs/projects_stonybrook.pdf" target="_blank">See the presentation <i class="fas fa-external-link-alt"></i></a>
+      
+      <a class="linkbutton" href="docs/projects_stonybrook.pdf" target="_blank">
+        <img src="img/projects/stonybrook/stonybrookpresentation.png" style="max-width: 75%"><br>
+        See the presentation <i class="fas fa-external-link-alt"></i></a>
 
 </div><!--end of aboutproject-->
 

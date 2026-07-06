@@ -150,21 +150,19 @@ window.addEventListener('resize', sizeAccordion, true);
 
 
 
-function openNav() {
-  var x = document.getElementById("myTopnav");
-    document.body.style.overflow = 'hidden';
-    document.getElementById("outsidenav").style.display = 'block';
+function toggleNav() {
+  const x = document.getElementById("myTopnav");
+
+  if (getComputedStyle(x).width === "0px") {
+    document.body.style.overflow = "hidden";
+    document.getElementById("outsidenav").style.display = "block";
     x.style.width = "70%";
-}
-
-function closeNav(){
-  var x = document.getElementById("myTopnav");
-    document.body.style.overflow = 'auto';
-    document.getElementById("outsidenav").style.display = 'none';
+  } else {
+    document.body.style.overflow = "auto";
+    document.getElementById("outsidenav").style.display = "none";
     x.style.width = "0";
+  }
 }
-
-
 
 
 
