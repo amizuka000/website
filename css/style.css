@@ -126,6 +126,14 @@ button:hover {
   cursor: pointer;
 }
 
+.presentationlink:hover, .presentationlink:hover i{
+text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+
 
 hr {
   height: 1px;
@@ -627,6 +635,10 @@ display: flex;
   padding:2em;
   margin-bottom: 2em;
   border-radius: 1em;
+}
+
+.aboutproject h3{
+  margin: 0;
 }
 
   /*============================= ART ===========================*/

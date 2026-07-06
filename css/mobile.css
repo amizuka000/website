@@ -195,7 +195,6 @@
     float: none;
   }
 
-
  h2, h3{
     text-align: center;
   }
@@ -360,8 +359,6 @@ height: 2.5em;
   .accordionpanel{
     padding: 0.5em 1em;
   }
-
-
   
   .tab button {
   font-size: 0.8em;
