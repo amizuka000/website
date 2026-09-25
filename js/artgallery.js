@@ -3,6 +3,8 @@
 
 // Arrays for images in each tab
 const drawings = [
+  { src: "img/art/cali.jpg", alt: "Cali" },
+  { src: "img/art/biscuit.jpg", alt: "Biscuit" },
   { src: "img/art/abstractflower.jpg", alt: "Abstract Flower" },
   { src: "img/art/twocats.jpg", alt: "Two Cats" },
   { src: "img/art/crumble.jpg", alt: "Crumble" },
